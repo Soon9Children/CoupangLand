@@ -1,0 +1,102 @@
+@import url(common.css);
+
+
+/* 배너 시작 */
+.banner-container{
+    position: relative;
+    background: gainsboro;
+    height: 441px;
+}
+.banner{
+    position: relative;
+    margin: 0px auto;
+    width: 1920px;
+}
+
+.banner .menu{
+    position: absolute;
+    top: 10%;
+    right: 200px;
+}
+.banner .img{
+    width: 1920px;
+}
+
+.banner .menu li:hover{
+    border: 3px solid blue;
+}
+/* 배너 끝 */
+
+/* 레이아웃 첫번째 시작 */
+img{
+    width: 98%; 
+}
+
+.go{
+    position: absolute;
+    background-image: url(../이미지/go.png);
+    height: 40px;
+    width: 40px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1020px;
+    height: 1036px;
+    /* border: 1px solid #000; */
+    /* background: green; */
+}
+
+.container h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 20px;
+}
+.container h2 span{
+    font-weight: 400;
+    font-size: 16px;
+}
+.container .today-find{
+    border: 1px solid rgba(169, 169, 169, 0.5);
+    width: 980px;
+    height: 960px;
+    margin: 0px 20px 10px;
+    padding: 13px 9px;
+    /* background-color: aquamarine; */
+}
+.container .today-find .today-find-box{
+    position: relative;
+    width: 228px;
+    height: 299px;
+    border: 1px solid rgba(169, 169, 169, 0.5);
+    float: left;
+    margin: 3px 5.5px;
+    
+}
+
+.container .today-find .today-find-box:hover{
+    border: 3px solid blue;
+}
+.container .today-find .today-find-box:hover .go{
+    position: absolute;
+    background-image: url(../이미지/buy.jpg);
+    height: 40px;
+    width: 100px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.container .today-find .today-find-box:nth-child(-n+2), 
+.container .today-find .today-find-box:nth-child(7){
+    width: 468px;
+    height: 299px;   
+}
+.container .today-find .today-find-box:nth-child(8),
+.container .today-find .today-find-box:nth-child(9){
+    height: 299px;
+}
+
+/* 레이아웃 첫번째 끝 */
+
