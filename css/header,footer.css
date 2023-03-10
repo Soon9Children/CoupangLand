@@ -1,0 +1,152 @@
+@import url('../css/common.css');
+
+
+footer > * {
+    text-align: center;
+    margin: 0 auto; 
+    
+}
+/* footer > .footer1 */
+footer .footer1 {
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    font-size: 0.7em;
+
+}
+footer .footer1 a {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid #a09b9b;
+}
+footer .footer1 a:first-child {
+    border: none;
+}
+footer .footer1 .list8, 
+footer .footer1 .list10 {
+    font-weight: 700;
+}
+
+footer .footer1 div .globalsite {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+/* footer > .footer2 */
+
+footer > .footer2 {
+    width: 60%;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0; 
+    
+
+}
+footer .footer2  div {
+    float: left;
+    font-size: 0.6em; 
+    text-align: left;
+    line-height: 1.6;
+    margin-right: 10px;
+}   
+footer .footer2 #box1 {
+    width: 15%;
+    height: 35px;
+   
+    background-repeat: no-repeat;
+}
+footer .footer2 #box2 {
+    width: 20%;
+    
+}
+footer .footer2 #box3 {
+    width: 30%;
+}
+footer .footer2 #box3 a {
+    display: block;
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+footer .footer2 #box3 #a1 {
+    font-weight: 700;
+    display: inline;
+    border-right: 1px solid #333232;
+}
+footer .footer2 #box3 #a2 {
+    display: inline;
+}
+footer .footer2 #box3 #a3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .footer2 #box2 p a,  
+footer .footer2 #box4 p a {
+    text-decoration: underline;
+}
+
+footer .footer2 #box4 {
+    width: 25%;
+}
+footer .footer2 #box4 span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* footer > .footer3 */
+footer > .footer3 { 
+    padding: 20px;
+
+}
+
+
+
+/* footer > .footer4 */
+
+footer .footer4 {    
+    background-color: #333232;
+    padding: 20px 0;
+    
+}
+footer .footer4 p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    text-align: left;
+}
+footer .footer4 .link {
+    position: relative;
+    left: 300px;
+
+
+
+}
+
+footer .footer4 ul li a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    
+    
+
+}
+footer .footer4 ul li #face {
+    background-image: url('../img/facebook.png');
+    
+}
+footer .footer4 ul li #blog {
+    background-image: url('../img/naver.png');
+}
+footer .footer4 ul li #insta {
+    background-image: url('../img/insta.png');
+}
+
+
+footer .footer4 p {
+    text-align: left;
+    color: #a09b9b;
+}
+
+

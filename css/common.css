@@ -14,7 +14,7 @@ body{
 }
 
 /* 추가 reset사항이 있으면 아래에 적어주세요. */
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
