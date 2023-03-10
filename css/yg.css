@@ -1,0 +1,176 @@
+body{
+    font-size: 14px;
+}
+
+
+/* 배너 이미지 시작 */
+.banner{
+    position: relative;
+    width: 100%;
+    background: url(../img/yg/banner-1.jpg);
+    height: 450px;
+}
+
+.banner li:nth-child(n):hover {
+    border: 3px solid blue;
+}
+
+
+.banner .banner-menu{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 200px;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    box-shadow: 2px 2px 20px black;
+}
+
+.banner .banner-menu li{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.781);
+}
+
+.banner .banner-menu li:last-child{
+    border-bottom: none;
+}
+
+.banner .banner-menu li:nth-child(1) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-1.jpg) content-box;
+    height: 60px;
+}
+.banner .banner-menu li:nth-child(2) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-2.jpg) content-box;
+    height: 60px;
+}
+.banner .banner-menu li:nth-child(3) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-3.jpg) content-box;
+    height: 60px;
+}
+.banner .banner-menu li:nth-child(4) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-4.jpg) content-box;
+    height: 60px;
+}
+.banner .banner-menu li:nth-child(5) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-5.jpg) content-box;
+    height: 60px;
+}
+.banner .banner-menu li:nth-child(6) .banner-content{
+    background: no-repeat center/100% url(../img/yg/banner-menu-6.jpg) content-box;
+    height: 60px;
+}
+
+/* 배너 끝 */
+
+/* 메인 시작 */
+.main {
+    width: 70%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.main .find{
+    height: 800px;
+    padding: 20px;
+    /* background-color: gainsboro; */
+    border: 1px solid #000;
+}
+
+.main .find h2{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.main .find h2 span{
+    font-size: 18px;
+    font-weight: 400;
+}  
+.main .find .find-box{
+    border: 1px solid #000;
+    margin: 20px 0px;
+    height: 90%;
+} 
+
+.main .find .find-box .content{
+    border: 1px solid #000;
+    height: 30%;
+    margin: 1.5% 10px;
+}
+
+.main .find .find-box .content .find-image{
+    position: relative;
+}
+
+.main .find .find-box .content .find-image .baro{
+    background: no-repeat center/100% url(../img/yg/baro.jpg) content-box;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.main .find .find-box .content .find-image:hover .baro{
+    background: no-repeat center/100% url(../img/yg/gume.png) content-box;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 40px;
+    width: 60px;
+}
+
+.main .find .find-box .content{
+    text-align: center;
+}
+
+.main .find .find-box .content .find-image{
+    background-color: antiquewhite;
+}
+
+.main .find .find-box .content:nth-child(1) .find-image{
+    float: left;
+    border: 1px solid #000;
+    margin-left: 1.3%;
+    margin-top: 5px;
+    width: 48%;
+    height: 95%;
+}
+
+.main .find .find-box .content:nth-child(1) .find-image:nth-child(1){
+   background-image:  url(../img/yg/find-1.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.main .find .find-box .content:nth-child(1) .find-image:nth-child(2){
+   background-image:  url(../img/yg/find-2.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+
+
+.main .find .find-box .content:nth-child(2) .find-image{
+    float: left;
+    border: 1px solid #000;
+    margin-left: 1.3%;
+    margin-top: 5px;
+    width: 23.3%;
+    height: 95%;
+}
+.main .find .find-box .content:nth-child(3) .find-image:nth-child(1){
+    float: left;
+    border: 1px solid #000;
+    margin-left: 1.3%;
+    margin-top: 5px;
+    width: 48%;
+    height: 95%;
+}
+.main .find .find-box .content:nth-child(3) .find-image:nth-child(n+2){
+    float: left;
+    border: 1px solid #000;
+    margin-left: 1.3%;
+    margin-top: 5px;
+    width: 23%;
+    height: 95%;
+}
+
