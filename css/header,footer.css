@@ -26,6 +26,12 @@ footer .footer1 .list10 {
     font-weight: 700;
 }
 
+footer .footer1 div .globalsite {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
 /* footer > .footer2 */
 
 footer > .footer2 {
@@ -98,15 +104,19 @@ footer > .footer3 {
 footer .footer4 {    
     background-color: #333232;
     padding: 20px 0;
-    position: relative;
+    
 }
 footer .footer4 p {
-    width: 80%;
-    font-size: 0.8em;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 0.7em;
     text-align: left;
 }
 footer .footer4 .link {
-    
+    position: relative;
+    left: 300px;
+
+
 
 }
 
@@ -117,7 +127,7 @@ footer .footer4 ul li a {
     margin-right: 8px;
     background-repeat: no-repeat;
     background-size: cover;
-    float: right;
+    float: left;
     
     
 
