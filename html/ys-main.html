@@ -1,101 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/common.css">
 
-    <style>
-        .container{
-            width: 70%;
-            margin: 20px auto 0;
-            border: 1px solid #000;
-        }
-        header{
-            border: 1px solid #000;
-            background-color: mediumseagreen;
-        }
-        header nav .list{
-            border: 1px solid #000;   
-            
-        }
-        header nav .list li{
-            border: 1px solid #000;
-        }
-        header .logo {
-           
-        }
-        header .text {
-            border: 1px solid #000;
-           
-        }
-        header .a{
+<style>
+    body {
+        color: white;
 
-        }
-        header .b{
+    }
 
-        }
-        header .c{
+    .container {
+        width: 70%;
+        height: 800px;
+        margin: 20px auto 0;
+        border: 4px solid red;
+    }
 
-        }
-        section{
-            margin: 20px auto 0;
-            border: 1px solid #000;
-            background-color: aqua;
-           
-        }
-        footer{
-            margin: 20px auto 0;
-            border: 1px solid #000;
-            border-color: white;
-          
-        }
+    header {
+        background-color: mediumseagreen;
+        height: 15%;
+    }
 
+    header .h-list {
+        padding: 20px 10px;
+        padding-left: 26%;
+        font-size: 0.7em;
+    }
 
-    </style>
+    header .h-list li {
+        float: left;
+    }
+
+    header .h-list li::after {
+        content: "|";
+        color: #fff;
+        opacity: 0.4;
+        padding: 0 12px;
+    }
+
+    header .search {
+        padding: 5px 30px;
+    }
+
+    header .search h1 {
+        width: 25%;
+        font-weight: 700;
+        font-size: 1.3em;
+        float: left;
+        padding-left: 10%;
+        padding-top: 5px;
+    }
+
+    header .search .input {
+        width: 75%;
+        float: right;
+    }
+
+    header .search input {
+        padding: 7px;
+    }
+
+    header .search img {}
+
+    section {
+        border: 4px solid violet;
+        height: 55%;
+        background: url('../img/영수/롯데호텔.png') no-repeat 0 / cover;
+        position: relative;
+    }
+
+    section nav {
+        border: 3px solid violet;
+        position: relative;
+        top: 70%;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    section nav .main {
+        padding: 20px;
+    }
+    section nav .main .main-list {
+        border-top: 1px solid gray;
+        float: left;
+        padding: 10px;
+    }
+    section nav .main .main-list li{
+        margin: 10px 0px 0px;
+    }
+
+    section nav .main .main-list span {
+        display: block;
+    }
+
+    footer {
+        height: 45%;
+        border: 4px solid maroon;
+        border-color: white;
+
+    }
+</style>
 
 
 <body>
+    <!-- 큰박스 -->
     <div class="container">
         <!--header시작 -->
         <header>
             <nav>
-                <ul class="list">
+                <ul class="h-list clearfix">
                     <li>숙박</li>
-                    <li>티켓,패스</li>
-                    <li>패키치 항공</li>
+                    <li>티켓/패스</li>
+                    <li>패키치/항공</li>
                     <li>렌터카</li>
                 </ul>
             </nav>
-            <div class="logo">
-                coupang여행
-            </div>
-            <input type="text" class="text a"  name="text" value="국내외 지역명,숙소명으로 검색">
-            <input type="text" class="text b"  name="text" value="3월 10일 (금) ~ 3월 11일(토)">
-            <input type="text" class="text c"  name="text" value="성인2, 아동0">
+            <div class="search clearfix">
+                <h1>coupang여행</h1>
+                <div class="input">
+                    <input type="search" name="text" value="국내외 지역명,숙소명으로 검색" size=40>
+                    <input type="search" name="text" value="3월 10일 (금) ~ 3월 11일(토)" size=30>
+                    <input type="search" name="text" value="성인2, 아동0" size=10>
+                    <img src="" alt="search">
+                </div>
         </header>
 
-         <!--section 시작 -->
+        <!--section 시작 -->
         <section>
-            <h2>
-                3/8~3/11 기간한정 파격 특가
-                롯데호텔 브랜드 전국 13개 지점
-            </h2>
             <nav>
-                <ul>
-                    <li>롯데호텔 브랜드데이</li>
-                    <li>화이트데이 티켓/패스</li>
-                    <li>해외여행 추천! 트레블360</li>
-                    <li>와우회원 추가할인</li>
-                    <li>쿠키트레블</li>
-                    <li>단독 특가 펜션</li>
-                    <li>하나투어 해외여행</li>
-                    <li>금호리저트 4개 지점</li>
-                    <li>프리미엄 스테이</li>
-                    <li>쿠팡 펫여행</li>
+                <ul class="main clearfix">
+                    <div class="main-list">
+                        <li><span>롯데호텔</span> 브랜드데이</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>화이트데이</span> 티켓/패스</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>해외여행 추천!</span> 트레블360</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>와우회원</span> 추가할인</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>쿠키트레블</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>단독 특가</span> 펜션</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>하나투어</span> 해외여행</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>금호리저트</span> 4개 지점</li>
+                    </div>
+                    <div class="main-list">
+                        <li><span>프리미엄</span> 스테이</li>
+                    </div>
+                    <div class="main-list">
+                        <li>쿠팡 펫여행</li>
+                    </div>
                 </ul>
             </nav>
         </section>
@@ -106,27 +175,27 @@
                 국내여행 카테고리
             </h3>
             <a href="#" id="img">
-            <div class="imgbox1">
-                <p>호텔,리조트</p>
-            </div>
-            <div class="imgbox2">
-                <p>티켓/패스</p>
-            </div>
-            <div class="imgbox3">
-                <p>팬션/캠핑</p>
-            </div>
-            <div class="imgbox4">
-                <p>패키지여행/항공</p>
-            </div>
-            <div class="imgbox5">
-                <p>렌터카</p>
-            </div>
+                <div class="imgbox1">
+                    <p>호텔,리조트</p>
+                </div>
+                <div class="imgbox2">
+                    <p>티켓/패스</p>
+                </div>
+                <div class="imgbox3">
+                    <p>팬션/캠핑</p>
+                </div>
+                <div class="imgbox4">
+                    <p>패키지여행/항공</p>
+                </div>
+                <div class="imgbox5">
+                    <p>렌터카</p>
+                </div>
             </a>
         </footer>
-    </div>
-    
 
+    </div>
 
 
 </body>
+
 </html>
