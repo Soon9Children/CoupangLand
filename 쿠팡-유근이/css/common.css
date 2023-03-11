@@ -10,6 +10,8 @@
 }
 /* body 선택자에 기본 폰트크기와 글꼴을 넣어주세요 */
 body{
+    padding: 0;
+    margin: 0;
     font-size: 18px;
 }
 
