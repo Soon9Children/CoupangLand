@@ -1,15 +1,18 @@
 @import url(common.css);
 
+*{
+    font-family: sans-serif;
+}
 
 /* 배너 시작 */
 .banner-container{
     position: relative;
     background: gainsboro;
-    height: 441px;
+    height: 450px;
 }
 .banner{
     position: relative;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 1920px;
 }
 
@@ -20,6 +23,7 @@
 }
 .banner .img{
     width: 1920px;
+    
 }
 
 .banner .menu li:hover{
@@ -27,8 +31,8 @@
 }
 /* 배너 끝 */
 
-/* 레이아웃 첫번째 시작 */
-img{
+/* 레이아웃 첫번째 시작 - 오늘의 발견 */
+.today-find img{
     width: 98%; 
 }
 
@@ -98,5 +102,92 @@ img{
     height: 299px;
 }
 
-/* 레이아웃 첫번째 끝 */
+/* 레이아웃 첫번째 끝 - 오늘의 발견 */
 
+/* 두번째 레이아웃 시작 - 오늘의 판매자 특가 */
+.seller-container{
+    position: relative;
+    /* background: blueviolet; */
+    /* border: 1px solid #000; */
+    width: 980px;
+    height: 340px;
+    margin: 30px auto 0px;
+}
+.seller-container>h2{
+    float: left;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.seller-container h2>strong{
+    color: red;
+}
+.seller-container>span {
+    font-size: 14px;
+    line-height: 14px;
+    float: right;
+    
+}
+.seller-container>span strong{
+    font-weight: 700;
+}
+
+.seller-container .seller-boxes{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 930px;
+    height: 281px;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+    text-align: justify;
+}
+.seller-container .seller-boxes .seller-box{
+    float: left;
+    /* border: 1px solid #000; */
+    width: 160px;
+    height: 277px;
+    font-size: 13px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.seller-container .seller-box>img{
+    width: 160px;
+}
+
+.seller-container .seller-boxes .seller-box *:nth-child(n+2){
+    margin: 8px;
+}
+
+.seller-container .seller-boxes .seller-box div:nth-child(2) span{
+    font-weight: 700;
+    color: red;
+}
+.seller-container .seller-boxes .seller-box div:nth-child(4){
+    font-weight: 700;
+    color: brown;
+    font-size: 1.2em;
+}
+.seller-container .seller-boxes .seller-box div:nth-child(5){
+    color: orange;
+}
+
+.seller-container .seller-boxes .seller-box div:nth-child(5) span:last-child{
+    color: gray;
+    font-size: 0.8em;
+}
+
+.seller-container .seller-boxes .seller-button{
+    position: absolute;
+    right: 15px;
+    top: 45%;
+}
+.seller-container .seller-boxes .seller-button button{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* 두번째 레이아웃 끝 - 오늘의 판매자 특가 */
