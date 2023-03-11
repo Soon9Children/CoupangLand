@@ -4,6 +4,7 @@
     font-family: sans-serif;
 }
 
+
 /* 배너 시작 */
 .banner-container{
     position: relative;
@@ -46,6 +47,7 @@
 }
 
 .container{
+    position : relative;
     margin: 0 auto;
     width: 1020px;
     height: 1036px;
@@ -191,3 +193,54 @@
 
 
 /* 두번째 레이아웃 끝 - 오늘의 판매자 특가 */
+
+/* 사이드 배너 */
+
+.side-container{
+    position: absolute;
+    right: -150px;
+    top: 50px;
+    width: 130px;
+    /* border: 1px solid #000; */
+}
+
+.side-container .side-bar li{
+    margin: 5px auto;
+    width: 102px;
+    height: 150px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.side-container .side-cart{
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    height: 520px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.side-container .side-cart div:nth-child(-n+2){
+    height: 30px;
+    padding: 1px;
+    background: rgba(18, 14, 69, 0.751);
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+    color: #fff;
+    padding-top: 5px;
+}
+.side-container .side-cart div:last-child{
+    position: relative;
+    font-weight: 700;
+    width: 80%;
+    top: 40%;
+    margin: 0 auto;
+    color: #ccc;  
+
+}
+.side-container .side-cart div em{
+    color: rgb(114, 114, 252);
+}
+
+/* 사이드 배너 끝 */
