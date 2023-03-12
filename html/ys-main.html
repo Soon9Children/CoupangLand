@@ -12,23 +12,24 @@
 <style>
     body {
         color: white;
-
+        
     }
 
     .container {
         width: 70%;
-        height: 800px;
+        height: 700px;
         margin: 20px auto 0;
-        border: 4px solid red;
+       
     }
 
+    /* header 시작 */
     header {
         background-color: mediumseagreen;
         height: 15%;
     }
 
     header .h-list {
-        padding: 20px 10px;
+        padding: 15px 10px;
         padding-left: 26%;
         font-size: 0.7em;
     }
@@ -45,7 +46,7 @@
     }
 
     header .search {
-        padding: 5px 30px;
+        padding: 2px 20px;
     }
 
     header .search h1 {
@@ -68,15 +69,14 @@
 
     header .search img {}
 
+    /* section 시작 */
     section {
-        border: 4px solid violet;
         height: 55%;
         background: url('../img/영수/롯데호텔.png') no-repeat 0 / cover;
         position: relative;
     }
 
     section nav {
-        border: 3px solid violet;
         position: relative;
         top: 70%;
         width: 85%;
@@ -86,12 +86,14 @@
     section nav .main {
         padding: 20px;
     }
+
     section nav .main .main-list {
         border-top: 1px solid gray;
         float: left;
         padding: 10px;
     }
-    section nav .main .main-list li{
+
+    section nav .main .main-list li {
         margin: 10px 0px 0px;
     }
 
@@ -99,11 +101,66 @@
         display: block;
     }
 
+    /* footer 시작 */
     footer {
         height: 45%;
-        border: 4px solid maroon;
-        border-color: white;
+        color: black;
+    }
+    footer .category h3 {
+        height: 15%;
+        font-weight: 700;
+        font-size: 1.4em;
+        padding: 25px 100px 10px;
+        position: relative;
+        top:10px;
+    }
 
+    footer .category ul {
+        height: 700px;
+        margin-left: 5%;
+    }
+
+    footer .category ul li {
+        float: left;
+        width: 15%;
+        height: 30%;
+        text-align: center;
+        overflow: hidden;
+    }
+    footer .category ul li :hover{
+        transform: scale(1.1);
+    }
+    footer .category ul li a #category-img1{
+        width: 100%;
+        height: 80%;
+        background: url('../img/영수/의자.png') center / cover; 
+    }
+    footer .category ul li a #category-img2{
+        width: 100%;
+        height: 80%;
+        background: url('../img/영수/고래.png') center / cover;
+        
+    }
+    footer .category ul li a #category-img3{
+        width: 100%;
+        height: 80%;
+        background: url('../img/영수/펜션.png') center / cover;
+
+    }
+    footer .category ul li a #category-img4{
+        width: 100%;
+        height: 80%;
+        background: url('../img/영수/비행기.png') center / cover;
+    }
+    footer .category ul li a #category-img5{
+        width: 100%;
+        height: 80%;
+        background: url('../img/영수/자동차.png') center / cover;
+        
+    }
+    footer .category ul li a .category-name{
+        position: relative;
+        top: 7%;
     }
 </style>
 
@@ -171,26 +228,35 @@
 
         <!-- footer 시작 -->
         <footer>
-            <h3>
-                국내여행 카테고리
-            </h3>
-            <a href="#" id="img">
-                <div class="imgbox1">
-                    <p>호텔,리조트</p>
-                </div>
-                <div class="imgbox2">
-                    <p>티켓/패스</p>
-                </div>
-                <div class="imgbox3">
-                    <p>팬션/캠핑</p>
-                </div>
-                <div class="imgbox4">
-                    <p>패키지여행/항공</p>
-                </div>
-                <div class="imgbox5">
-                    <p>렌터카</p>
-                </div>
-            </a>
+            <div class="category">
+                <h3>국내여행 카테고리</h3>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div id="category-img1"></div>
+                            <span class="category-name">호텔/리조트</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div id="category-img2"></div>
+                            <span class="category-name">티켓/패스</span>
+                        </a></li>
+                    <li><a href="#">
+                            <div id="category-img3"></div>
+                            <span class="category-name">팬션/캠핑</span>
+                        </a></li>
+                    <li><a href="#">
+                            <div id="category-img4"></div>
+                            <span class="category-name">패키지여행/항공</span>
+                        </a></li>
+                    <li><a href="#">
+                            <div id="category-img5"></div>
+                            <span class="category-name">렌터카</span>
+                        </a></li>
+                </ul>
+
+            </div>
         </footer>
 
     </div>
