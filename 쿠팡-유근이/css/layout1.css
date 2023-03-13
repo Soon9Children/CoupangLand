@@ -247,6 +247,287 @@
 
 
 
+/* 카테고리별 추천 광고 상품 */
+.category-container{
+    width: 1116px;
+    /* height: 10000px; */
+    /* border: 1px solid #000; */
+    margin: 30px auto 20px;
+    padding: 10px;
+}
+
+
+.category-container h2{
+    /* border: 1px solid #000; */
+    margin-left: 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.category-container h2>span{
+    font-size: 1.2em;
+}
+.category-container h2>span>strong{
+    color: darkblue;
+}
+
+.kitchen{
+    border-top: 2px solid green !important;
+    color: green;
+}
+
+.woman{
+    border-top: 2px solid pink !important;
+    color: pink;
+}
+.man{
+    border-top: 2px solid blue !important;
+    color: blue;
+}
+
+.category-container .category-best{
+    margin-left: 50px;
+    width: 1020px;
+    height: 601px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+.category-container .category-best .category-keyword{
+    flex: 1.5;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+.category-container .category-best .category-img{
+    flex: 3;
+    /* border: 1px solid #000; */
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: url(../이미지/category-01.jpg);
+    position: relative;
+    overflow: hidden;
+}
+.category-container .category-best.woman .category-img{
+    background:url(https://thumbnail10.coupangcdn.com/thumbnails/remote/x/image/bannerunit/bannerunit_a86464cc-1756-4fc8-b0ed-b3e8b3636085.jpg);
+}
+.category-container .category-best.man .category-img{
+    background:url(https://thumbnail6.coupangcdn.com/thumbnails/remote/x/image/bannerunit/bannerunit_4b54b6ae-211f-491a-ad20-600f0b5e9683.jpg);
+}
+.category-container .category-best .category-boxes{
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+.category-container .category-best .category-keyword .category-title{
+    margin: 50px 20px;
+}
+
+.category-container .category-best .category-keyword .category-title h3{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.category-container .category-best .category-keyword .category-title a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ccc;
+}
+.category-container .category-best .category-keyword .category-hotkeyword{
+    margin: 50px 20px 10px; 
+}
+.category-container .category-best .category-keyword .category-hotkeyword h3{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.category-container .category-best .category-keyword .category-hotkeyword li{
+    margin-bottom: 8px;
+}
+.category-container .category-best .category-keyword .category-hotkeyword li a{
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.category-container .category-best .category-img>a {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.7);
+    width: 80%;
+    padding: 20px;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0);
+    line-height: 1.5;
+    text-align: center;
+}
+.category-container .category-best.woman .category-img>a {
+    background-color: rgba(255, 192, 203, 0.726);
+}
+.category-container .category-best.man .category-img>a {
+    background-color: rgba(0, 0, 255, 0.692);
+}
+
+.category-container .category-best .category-img>a .text{
+    font-size: 14px;
+}
+
+.category-container .category-best .category-img ul{
+    display: flex;
+    position: absolute;
+    left: 30%;
+    bottom: 10px;
+    color: rgba(128, 128, 128, 0.767);
+}
+.category-container .category-best .category-img ul li:first-child{
+    font-weight: 700;
+    color: black;
+}
+
+.category-container .category-best .category-boxes ul{
+    display: flex;
+    position: absolute;
+    left: 35%;
+    bottom: 10px;
+    color: rgba(128, 128, 128, 0.767);
+}
+
+.category-container .category-best .category-boxes ul li:first-child{
+    font-weight: 700;
+    color: black;
+}
+
+.category-container .category-best .category-boxes .category-box{
+    width: 33%;
+    height: 50%;
+    /* border: 1px solid #000; */
+    padding: 10px;
+    color: black;
+
+}
+.category-container .category-best .category-boxes .category-box:nth-child(-n+3){
+    border-bottom: 1px solid #ccc;
+}
+.category-container .category-best .category-boxes .category-box a{
+    line-height: 1.5;
+} 
+
+.category-container .category-best .category-boxes .category-box:hover a p{
+    color: blue;
+    text-decoration: underline;
+}
+.category-container .category-best .category-boxes .category-box .category-box-img{
+    /* border: 1px solid #000; */
+    height: 160px;  
+    margin-bottom: 20px;
+}
+
+.category-container .category-best .category-boxes .category-box .category-box-img:nth-child(1){
+    background: url(../이미지/category-01-01.jpg) ;
+}
+.category-container .category-best.woman .category-boxes .category-box .category-box-img:nth-child(1){
+    background: url(https://thumbnail8.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/d281/fd8c28e3f4cbaa34e52705e3061b9a4ce1cbcebff51cb829386243e06845.jpg) ;
+}
+.category-container .category-best.man .category-boxes .category-box .category-box-img:nth-child(1){
+    background: url(https://thumbnail10.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/cba2/68ed2c14d8da699ab7cb4cbe7024ce2053ad17ebfdc5965a426067df6b51.png) ;
+}
+
+.category-container .category-best .category-boxes .category-box p{
+    font-size: 14px;
+}
+.category-container .category-best .category-boxes .category-box h3{
+    font-weight: 700;
+
+}
+
+
+
+/* 카테고리별 추천 광고 상품 끝 */
+
+
+/* TOP button */
+.top-button{
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    opacity: 0.7;
+}
+/* TOP button 끝 */
+
+/* left-container  */
+.left-container{
+    position: fixed;
+    left: 5%;
+    top: 10%;
+    color: black;
+    /* border: 1px solid #000; */
+}
+
+.left-container ul{
+    position: relative;
+    border: 1px solid #000;
+}
+
+.left-container ul li{
+    position: relative;
+    height: 25px;
+    text-align: center;
+}
+
+.left-container li a{
+    position: relative;
+    width: 50px;
+    display: block;
+    /* border: 1px solid #000; */
+}
+.left-container li a+a{
+    position: absolute;
+    left: 50px;
+    bottom: 7px;
+    /* background-color: blue; */
+    display: none;
+}
+
+.left-container li:nth-child(4n):hover a{
+    color: white;
+    background: orange;
+}
+.left-container li:nth-child(4n+1):hover a{
+    color: white;
+    background: green;
+}
+.left-container li:nth-child(4n+2):hover a{
+    color: white;
+    background: pink;
+}
+.left-container li:nth-child(4n+3):hover a{
+    color: white;
+    background: blue;
+}
+
+.left-container li:hover a:last-child{
+    color: white;
+    width: max-content;
+    display: block;
+}
+
+
+
+
+
 footer > * {
     text-align: center;
     margin: 0 auto; 
@@ -254,6 +535,7 @@ footer > * {
 }
 /* footer > .footer1 */
 footer .footer1 {
+    border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     padding: 20px 0;
     font-size: 0.7em;
