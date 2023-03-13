@@ -12,20 +12,20 @@
 <body>
     <!-- header -->
     <header>
-        <div class="topbar clearfix" id="topbar">
+        <div class="topbar" id="topbar">
             <!-- header 최상단 -->
-            <div class="left">
+            <div class="left clearfix">
                 <ul>
                     <li><a href="#" title="즐겨찾기">즐겨찾기</a></li>
                     <li><a href="#">입점신청</a>
-                        <p class="dropmenu1">
+                        <!-- <p class="dropmenu1">
                             <p><a href="#">오픈마켓</a></p>
                             <p><a href="#">여행티켓</a></p>
                             <p><a href="#">로켓배송</a></p>
                             <p><a href="#">제휴마케팅</a></p>
-                    </p>
+                    </p> -->
                     </li>
-                    <div class="right">
+                    <div class="right clearfix">
                         <ul>
                             <li><a href="#" title="로그인">로그인</a></li>
                             <li><a href="#" title="회원가입">회원가입</a></li>
@@ -34,17 +34,56 @@
                     </div>
                 </ul>
             </div>
-
-            <div class="container">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="search"><input type="text"></div>
-                <div class="bar4"></div>
-                <div class="bar5"></div>
-                <nav class="menu"></nav>
-            </div>
-
         </div>
+        <div class="container">
+
+        <table class="table">
+            <tr>
+                <td rowspan="2" class="cat">
+                    <div class="bar0"><img></div>
+                    <div class="bar1">카테고리</div>
+                </td>
+            <td>       
+                <div class="bar2"><a href="#" title="Coupang - 내가 잘사는 이유"><img src="../img/coupang.jpg" alt="">
+                </a></div>
+            </td>
+            <td>
+                <div class="bar3">
+                    <div class="select"></div>
+                    <div class="search"><input type="text"></div>
+                </div>
+            </td>
+            <td>
+                
+                <div class="bar4 img"><a href="#">마이쿠팡</a></div>
+            </td>
+            <td>
+                <div class="bar5 img"><a href="#">장바구니</a></div>
+            </td>
+            </tr>
+            
+            <tr>
+                <td colspan="4">
+                <nav class="menu">
+                    <ul>
+                        <li class="m1"><a href="#">로켓배송</a></li>
+                        <li class="m2"><a href="#">로켓프레시</a></li>
+                        <li class="m3"><a href="#">쿠팡비즈</a></li>
+                        <li class="m4"><a href="#">로켓직구</a></li>
+                        <li class="m5"><a href="#">골드박스</a></li>
+                        <li class="m6"><a href="#">와우회원할인</a></li>
+                        <li class="m7"><a href="#">이벤트/쿠폰</a></li>
+                        <li class="m8"><a href="#">착한상정</a></li>
+                        <li class="m9"><a href="#">기획전</a></li>
+                        <li class="m10"><a href="#">여행/티켓</a></li>
+                    </ul>
+                </nav>
+             </td>
+            </tr>
+        </table>    
+        </div>
+
+        
     </header>
 
 

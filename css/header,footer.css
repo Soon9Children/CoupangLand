@@ -8,19 +8,24 @@ header .topbar {
 
 }
 
-
+header .topbar .left ul {
+}
 header .topbar .left ul li {
     float: left;
     padding: 8px;
 }
 
-header .topbar .right ul li {
+header .topbar .right ul {
     float: right;
     padding: 8px;
 }
-header .top .left >li .dropmenu1 {
-    display: none;
-    position: absolute;
+header .topbar .right ul li {
+    display: flex;
+}
+header .top .left >li .dropmenu1 p {
+
+    display: hidden;
+
 }
 
 
@@ -29,6 +34,80 @@ header .top .left >li:hover .dropmenu1 {
     padding: 10px;
 }
 
+
+/* header .container  */
+header .container {
+    border-bottom: 1px solid #000;
+}
+
+header .container .table {
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid #000;;
+    
+}
+header .container .table .cat {
+    border: 1px solid #000;
+    background: #4052f7;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.7em;
+
+    
+}
+
+header .container .bar1 {
+    
+}
+header .container .bar2 {
+    width: 170px;
+    height: 41px;
+    
+}
+header .container .bar2 img {
+    width: 100%;
+
+}
+header .container .bar3 {
+    border: 1px solid #000;
+    width: 488px;
+    height: 41px;
+}
+header .container .bar3 input {
+    width: 300px;
+    height: 38px;
+}
+
+
+header .container .table div.img {
+    width: 50px;
+    height: 54px;
+    
+
+
+}
+header .container .table div.img a {
+    width: 100%;
+    font-size: 0.6em;
+
+}
+
+/* container nav tag */
+
+header .container .menu ul {
+    display: flex;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 0.7em;
+}
+header .container .menu ul li {
+    margin-right: 20px;
+}
+header .container .menu ul li:hover {
+    color: blue;
+    text-decoration: underline;
+}
 
 
 
