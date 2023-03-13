@@ -1,0 +1,173 @@
+@import url(../css/common.css);
+
+section.container {
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 4px solid #ccc;
+}
+
+section.container .first {
+    margin: 20px 0;
+    padding: 20px 0;
+    background: #516eee;
+    display: flex;
+
+}
+section.container .first .title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    flex: 1;
+    
+
+}
+section.container .first .search {
+    border: 1px solid #000;
+    background: #fff;
+    flex: 3;
+} 
+
+section.container .first .title .icon .i {
+    color: #516eee;
+    display: block;
+}
+section.container .first .title .icon:hover .i {
+    background: #052ace;
+    color: #fff;
+}
+section.container .first .chat {
+    display: block;
+    width: fit-content;
+    background: #052ace;
+    color: #fff;
+    flex: 2;
+}
+
+/*  section.container .second 두번째 줄 메뉴 */
+
+section.container .second {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8em;
+    font-weight: 700;
+
+}
+
+section.container .second .menu {
+    display: flex;
+}
+
+section.container .second .menu a {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+    
+}
+section.container .second .menu a:hover {
+    color:#516eee;
+}
+
+section.container .second .id {
+    margin-left: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    display: flex; 
+    border-right: 1px solid #ccc;
+
+}
+section.container .second .id a {
+    margin: 10px;
+}
+
+
+section.container .second .cus {
+    color: #516eee;
+    font-weight: 400;
+    font-size: 0.8em;
+    
+}
+section.container .second .cus span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* section.container .list  */
+
+section.container .list {
+    margin: 20px 0;
+    background: #f3eded;
+    font-weight: 700;
+    font-size: 0.7em;
+    
+}
+
+section.container .list ul {
+    display: flex; 
+    
+}
+
+section.container .list li {
+    padding: 20px 0;
+    border: 0.5px solid #e0dada;
+}
+
+/* aside.side-bar  */
+aside.side-bar {
+    position: absolute;
+    left: 1700px;
+}
+
+aside.side-bar .ban {
+    width: 102px;
+    height: 150px;
+    
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+aside.side-bar .ban img {
+    width: 100%;
+}
+
+aside.side-bar .last  {
+    margin-top: 20px;
+   border: 1px solid #7c6c6c;
+   color: #fff;
+   background: #000;
+   width: fit-content;
+   font-size: 0.7em;
+
+   
+}
+aside.side-bar .last .s1 {
+    border-bottom: 1px solid #7c6c6c;
+    padding: 10px;
+}
+aside.side-bar .last .s2 {
+    border-bottom: 1px solid #7c6c6c;
+    padding: 10px;
+}
+aside.side-bar .last span {
+    color: #516eee;
+    font-weight: 700;
+}
+aside.side-bar .last .s3 {
+    height: 150px;
+    background-color: #fff;
+    color: #ccc;
+    text-align: center;
+}
+aside.side-bar .top {
+    margin-top: 20px;
+    width: 70px;
+    border: 1px solid #ccc;
+    color: #7c6c6c;
+    text-align: center;
+    background: rgba(#e0dada, 0.5);
+}
+aside.side-bar .top a {
+    display: block;
+    width: 100%;
+    font-size: 0.7em;
+}
