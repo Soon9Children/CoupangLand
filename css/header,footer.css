@@ -1,6 +1,41 @@
 @import url('../css/common.css');
 
+/* header 최상단 */
 
+header .topbar {
+    background-color: #cecccc;
+    font-size: 0.6em;
+
+}
+
+
+header .topbar .left ul li {
+    float: left;
+    padding: 8px;
+}
+
+header .topbar .right ul li {
+    float: right;
+    padding: 8px;
+}
+header .top .left >li .dropmenu1 {
+    display: none;
+    position: absolute;
+}
+
+
+header .top .left >li:hover .dropmenu1 {
+    display: block;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* footer */
 footer > * {
     text-align: center;
     margin: 0 auto; 
