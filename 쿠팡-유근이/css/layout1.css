@@ -313,9 +313,12 @@
     position: relative;
     overflow: hidden;
 }
+
+
 .category-container .category-best.woman .category-img{
     background:url(https://thumbnail10.coupangcdn.com/thumbnails/remote/x/image/bannerunit/bannerunit_a86464cc-1756-4fc8-b0ed-b3e8b3636085.jpg);
 }
+
 .category-container .category-best.man .category-img{
     background:url(https://thumbnail6.coupangcdn.com/thumbnails/remote/x/image/bannerunit/bannerunit_4b54b6ae-211f-491a-ad20-600f0b5e9683.jpg);
 }
@@ -444,14 +447,62 @@
 
 
 
-.category-container .category-best .category-boxes .category-box .category-box-img:nth-child(1){
+.category-container .category-best .category-boxes .category-box:nth-child(1) .category-box-img{
     background: url(../이미지/category-01-01.jpg) ;
 }
-.category-container .category-best.woman .category-boxes .category-box .category-box-img:nth-child(1){
+
+.category-container .category-best .category-boxes .category-box:nth-child(2) .category-box-img{
+    background: url(https://thumbnail9.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/67ed/9cc411dcc91866cad10505b6dd3f9cbf5edab2ccf0f0fa676ed793d43a92.jpg) ;
+}
+.category-container .category-best .category-boxes .category-box:nth-child(3) .category-box-img{
+    background: url(https://thumbnail6.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/1684420037301-fefbf74f-1f9c-4eb1-aceb-4eaf3076bd5e.jpg) ;
+}
+.category-container .category-best .category-boxes .category-box:nth-child(4) .category-box-img{
+    background: url(https://thumbnail10.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/68103355042787-851970be-cfaa-4315-98b4-858185e669bc.JPG) ;
+}
+.category-container .category-best .category-boxes .category-box:nth-child(5) .category-box-img{
+    background: url(https://thumbnail10.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/2018/06/19/17/8/0348b876-e1eb-484f-b78b-ff4d929804f0.jpg) ;
+}
+.category-container .category-best .category-boxes .category-box:nth-child(6) .category-box-img{
+    background: url(https://thumbnail6.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/1144394997964569-214a478a-0154-4c73-b328-37a7f9f67130.jpg) ;
+}
+
+
+.category-container .category-best.woman .category-boxes .category-box:nth-child(1) .category-box-img{
     background: url(https://thumbnail8.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/d281/fd8c28e3f4cbaa34e52705e3061b9a4ce1cbcebff51cb829386243e06845.jpg) ;
 }
-.category-container .category-best.man .category-boxes .category-box .category-box-img:nth-child(1){
+.category-container .category-best.woman .category-boxes .category-box:nth-child(2) .category-box-img{
+    background: url(https://thumbnail7.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/4bbc/0755a649dbe788efbbc5d8dd02d9e00681861e828b96c29936362ebef5b5.jpg) ;
+}
+.category-container .category-best.woman .category-boxes .category-box:nth-child(3) .category-box-img{
+    background: url(https://thumbnail9.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/f874/02315a775c660bad647c881dfd7c9e047708ec875b206cd717dae1c13a94.jpg) ;
+}
+.category-container .category-best.woman .category-boxes .category-box:nth-child(4) .category-box-img{
+    background: url(https://thumbnail6.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/bd9e/ca484acb38e814c06ad1c8b757d12ebf9b47e4a456e6d3f3d98105e902dd.jpg) ;
+}
+.category-container .category-best.woman .category-boxes .category-box:nth-child(5) .category-box-img{
+    background: url(https://thumbnail7.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/3711939573191496-fbb05017-2411-49fd-8458-b4c8fd121995.jpg) ;
+}
+.category-container .category-best.woman .category-boxes .category-box:nth-child(6) .category-box-img{
+    background: url(https://thumbnail6.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/695a/b5ae9922b8a0a1d93849b97f55ba25e41f47808da944a2603dd1793bc923.jpg) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(1) .category-box-img{
     background: url(https://thumbnail10.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/cba2/68ed2c14d8da699ab7cb4cbe7024ce2053ad17ebfdc5965a426067df6b51.png) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(2) .category-box-img{
+    background: url(https://thumbnail9.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/ab0a/e1c70ad2002e440708819f49838c9d006d325501edb792b8eefbe66eac55.jpg) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(3) .category-box-img{
+    background: url(https://thumbnail9.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/e910/e8d64b0c7e23e594cb19e342d1a7fd1593defb2b1ce63651fa4e6d19fafc.png) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(4) .category-box-img{
+    background: url(https://thumbnail7.coupangcdn.com/thumbnails/remote/160x160ex/image/rs_quotation_api/0lvzc0rf/839dd29629b348f9bda475688cf4e0fc.jpg) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(5) .category-box-img{
+    background: url(https://thumbnail8.coupangcdn.com/thumbnails/remote/160x160ex/image/retail/images/1112296584835243-c79ab6c9-77f8-4973-b0f7-682cdeff33a9.jpg) ;
+}
+.category-container .category-best.man .category-boxes .category-box:nth-child(6) .category-box-img{
+    background: url(https://thumbnail10.coupangcdn.com/thumbnails/remote/160x160ex/image/vendor_inventory/d1d5/d8274ca1ab3602fc2a8ebebda70cf05a68c419fa219eb561e16a58514987.jpg) ;
 }
 
 .category-container .category-best .category-boxes .category-box p{
