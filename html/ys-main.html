@@ -7,177 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="../css/common.css">
-
-<style>
-    body {
-        color: white;
-        
-    }
-
-    .container {
-        width: 70%;
-        height: 700px;
-        margin: 20px auto 0;
-       
-    }
-
-    /* header 시작 */
-    header {
-        background-color: mediumseagreen;
-        height: 15%;
-    }
-
-    header .h-list {
-        padding: 15px 10px;
-        padding-left: 26%;
-        font-size: 0.7em;
-    }
-
-    header .h-list li {
-        float: left;
-    }
-
-    header .h-list li::after {
-        content: "|";
-        color: #fff;
-        opacity: 0.4;
-        padding: 0 12px;
-    }
-    
-
-    header .search {
-        padding: 2px 20px;
-    }
-
-    header .search h1 {
-        width: 25%;
-        font-weight: 700;
-        font-size: 1.3em;
-        float: left;
-        padding-left: 10%;
-        padding-top: 5px;
-    }
-
-    header .search .input {
-        width: 75%;
-        float: right;
-    }
-
-    header .search input {
-        padding: 7px;
-    }
-
-    header .search img {}
-
-    /* section 시작 */
-    section {
-        height: 55%;
-        background: url('../img/영수/롯데호텔.png') no-repeat 0 / cover;
-        position: relative;
-    }
-
-    section nav {
-        position: relative;
-        top: 70%;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    section nav .main {
-        padding: 20px;
-    }
-
-    section nav .main .main-list {
-        border-top: 1px solid gray;
-        float: left;
-        padding: 10px;
-        position: relative;
-        left: 1%;
-        margin-right: 20px;
-    }
-    section nav .main .main-list:hover{
-        border-top: 4px solid lightgray;
-    }
-
-    section nav .main .main-list li {
-        margin: 10px 0px 0px;
-    }
-
-    section nav .main .main-list span {
-        display: block;
-    }
-
-    /* footer 시작 */
-    footer {
-        height: 45%;
-        color: black;
-    }
-    footer .category h3 {
-        height: 15%;
-        font-weight: 700;
-        font-size: 1.4em;
-        padding: 25px 100px 10px;
-        position: relative;
-        top:10px;
-    }
-
-    footer .category ul {
-        height: 700px;
-        margin-left: 5%;
-    }
-
-    footer .category ul li {
-        float: left;
-        width: 15%;
-        height: 30%;
-        text-align: center;
-        overflow: hidden;
-    }
-    footer .category ul li :hover{
-        transform: scale(1.1);
-    }
-    footer .category ul li a #category-img1{
-        width: 100%;
-        height: 80%;
-        background: url('../img/영수/의자.png') center / cover; 
-    }
-    footer .category ul li a #category-img2{
-        width: 100%;
-        height: 80%;
-        background: url('../img/영수/고래.png') center / cover;
-        
-    }
-    footer .category ul li a #category-img3{
-        width: 100%;
-        height: 80%;
-        background: url('../img/영수/펜션.png') center / cover;
-
-    }
-    footer .category ul li a #category-img4{
-        width: 100%;
-        height: 80%;
-        background: url('../img/영수/비행기.png') center / cover;
-    }
-    footer .category ul li a #category-img5{
-        width: 100%;
-        height: 80%;
-        background: url('../img/영수/자동차.png') center / cover;
-        
-    }
-    footer .category ul li a .category-name{
-        position: relative;
-        top: 7%;
-    }
-</style>
+<link rel="stylesheet" href="../css/ys.css">
 
 
 <body>
-    <!-- 큰박스 -->
-    <div class="container">
-        <!--header시작 -->
-        <header>
+    <header>
+        <div class="header-container">
             <nav>
                 <ul class="h-list clearfix">
                     <li>숙박</li>
@@ -192,83 +27,324 @@
                     <input type="search" name="text" value="국내외 지역명,숙소명으로 검색" size=40>
                     <input type="search" name="text" value="3월 10일 (금) ~ 3월 11일(토)" size=30>
                     <input type="search" name="text" value="성인2, 아동0" size=10>
-                    <img src="" alt="search">
+                    <a href="#">
+                        <div class="search-icon">
+                        </div>
+                    </a>
                 </div>
-        </header>
-
-        <!--section 시작 -->
-        <section>
-            <nav>
-                <ul class="main clearfix">
-                    <div class="main-list">
-                        <li><span>롯데호텔</span> 브랜드데이</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>화이트데이</span> 티켓/패스</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>해외여행 추천!</span> 트레블360</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>와우회원</span> 추가할인</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>쿠키트레블</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>단독 특가</span> 펜션</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>하나투어</span> 해외여행</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>금호리저트</span> 4개 지점</li>
-                    </div>
-                    <div class="main-list">
-                        <li><span>프리미엄</span> 스테이</li>
-                    </div>
-                    <div class="main-list">
-                        <li>쿠팡 펫여행</li>
-                    </div>
-                </ul>
-            </nav>
-        </section>
-
-        <!-- footer 시작 -->
-        <footer>
+            </div>
+    </header>
+    <section>
+        <nav>
+            <ul class="main clearfix">
+                <div class="main-list">
+                    <li><span>롯데호텔</span> 브랜드데이</li>
+                </div>
+                <div class="main-list">
+                    <li><span>화이트데이</span> 티켓/패스</li>
+                </div>
+                <div class="main-list">
+                    <li><span>해외여행 추천!</span> 트레블360</li>
+                </div>
+                <div class="main-list">
+                    <li><span>와우회원</span> 추가할인</li>
+                </div>
+                <div class="main-list">
+                    <li><span>쿠키트레블</li>
+                </div>
+                <div class="main-list">
+                    <li><span>단독 특가</span> 펜션</li>
+                </div>
+                <div class="main-list">
+                    <li><span>하나투어</span> 해외여행</li>
+                </div>
+                <div class="main-list">
+                    <li><span>금호리저트</span> 4개 지점</li>
+                </div>
+                <div class="main-list">
+                    <li><span>프리미엄</span> 스테이</li>
+                </div>
+                <div class="main-list">
+                    <li>쿠팡 펫여행</li>
+                </div>
+            </ul>
+        </nav>
+    </section>
+    <!-- 큰박스 -->
+    <div class="container">
+        <!-- nav 시작 -->
+        <nav>
             <div class="category">
                 <h3>국내여행 카테고리</h3>
                 <ul class="clearfix">
                     <li>
                         <a href="#">
-                            <div id="category-img1"></div>
+                            <img src="https://image9.coupangcdn.com/image/component_62_asset/component_62_asset_94b4ab55-3357-4680-8ad8-c166613c87af.png"
+                                alt="">
                             <span class="category-name">호텔/리조트</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div id="category-img2"></div>
+                            <img src="http://image6.coupangcdn.com/image/component_62_asset/component_62_asset_2c199468-9831-4429-8972-58862551484d.png"
+                                alt="">
                             <span class="category-name">티켓/패스</span>
                         </a></li>
                     <li><a href="#">
-                            <div id="category-img3"></div>
+                            <img src="http://image7.coupangcdn.com/image/component_62_asset/component_62_asset_9d112669-36f4-41cc-b1f3-ecf301781d8a.png"
+                                alt="">
                             <span class="category-name">팬션/캠핑</span>
                         </a></li>
                     <li><a href="#">
-                            <div id="category-img4"></div>
+                            <img src="http://image6.coupangcdn.com/image/component_62_asset/component_62_asset_8b800256-6cb7-445d-8c83-11fa7cbee2cd.png"
+                                alt="">
                             <span class="category-name">패키지여행/항공</span>
                         </a></li>
                     <li><a href="#">
-                            <div id="category-img5"></div>
+                            <img src="http://image7.coupangcdn.com/image/component_62_asset/component_62_asset_91f9f4e9-2430-4b2b-ac9e-9574e0d6809a.png"
+                                alt="">
                             <span class="category-name">렌터카</span>
                         </a></li>
                 </ul>
-
             </div>
-        </footer>
+        </nav>
+        <nav>
+            <div class="category">
+                <h3>해외여행 카테고리</h3>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="https://image8.coupangcdn.com/image/component_62_asset/component_62_asset_b93a545d-6298-48e6-8786-5a76f89bf209.png"
+                                alt="">
+                            <!-- <img src="data:image/jpeg;base64,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" alt=""> -->
+                            <span class="category-name">패키지여행</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://image8.coupangcdn.com/image/component_62_asset/component_62_asset_562c7a2f-d892-46af-af17-af6f04948a5f.png"
+                                alt="">
+                            <span class="category-name">자유여행/항공</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="http://image6.coupangcdn.com/image/component_62_asset/component_62_asset_607ac29f-8164-44f3-a087-2f09efafe232.png"
+                                alt="">
+                            <span class="category-name">티켓/패스/현지투어</span>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="http://image7.coupangcdn.com/image/component_62_asset/component_62_asset_8e5a1f25-6b1d-4121-9b54-1a5584361f30.png"
+                                alt="">
+                            <span class="category-name">호텔</span>
+                        </a></li>
+                    <li><a href="#">
+                            <img src="http://image10.coupangcdn.com/image/component_62_asset/component_62_asset_80977b5e-f61c-4555-8bfc-7e357374494f.png"
+                                alt="">
+                            <span class="category-name">실시간항공권</span>
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="travel clearfix">
+                <h3>인기트립</h3>
+                <ul>
+                    <li>
+                        <img src="http://image6.coupangcdn.com/image/bannerunit/bannerunit_efc18164-c5dd-4c15-b877-3ccdd7bbabf3.jpg"
+                            alt="">
+                        <h4>에버랜드 종일이용권</h4>
+                        <p>당일사용 가능 30,000원~</p>
+                    </li>
+                    <li>
+                        <img src="http://image10.coupangcdn.com/image/bannerunit/bannerunit_a4761c7d-3c30-45be-ad68-884841e9ba41.jpg"
+                            alt="">
+                        <h4>롯데월드 종합이용권</h4>
+                        <p>최대 35% 할인</p>
+                    </li>
+                    <li>
+                        <img src="http://image10.coupangcdn.com/image/bannerunit/bannerunit_3a4fd182-4342-40bd-ae38-de8ec97ad54f.jpg"
+                            alt="">
+                        <h4>서울랜드 AFTER2</h4>
+                        <p>평일 한정 이용권 18,900원~</p>
+                    </li>
+                    <li>
+                        <img src="http://image6.coupangcdn.com/image/bannerunit/bannerunit_310b7cb7-7e30-410f-8509-78ca91631800.jpg"
+                            alt="">
+                        <h4>경주월드 2인 종일권</h4>
+                        <p>와우특가 51,000원</p>
+                    </li>
+                    <li>
+                        <img src="http://image7.coupangcdn.com/image/bannerunit/bannerunit_0e0a7583-eb99-488a-b69d-892d30adc9e8.jpg"
+                            alt="">
+                        <h4>이월드 메가 얼리버드</h4>
+                        <p>자유 이용권 13,900원</p>
+                    </li>
+                    <li>
+                        <img src="http://image10.coupangcdn.com/image/bannerunit/bannerunit_3400701d-4238-409c-8f56-f2803886ba77.png"
+                            alt="">
+                        <h4>키자니아 이용권</h4>
+                        <p>서울/부산 30% 할인</p>
+                    </li>
+                    <li>
+                        <img src="http://image6.coupangcdn.com/image/bannerunit/bannerunit_a00bee38-a82b-4848-8890-a66e4405f8de.jpg"
+                            alt="">
+                        <h4>아쿠아플라넷 일산</h4>
+                        <p>1인 입장권 21,500원~</p>
+                    </li>
+                    <li>
+                        <img src="http://image8.coupangcdn.com/image/bannerunit/bannerunit_a56197ed-1a8c-4f50-955d-e8851d246085.jpg"
+                            alt="">
+                        <h4>대구 아쿠아리움</h4>
+                        <p>와우특가 21,800원~</p>
+                    </li>
+                    <li>
+                        <img src="http://image10.coupangcdn.com/image/bannerunit/bannerunit_63da4224-56c1-4c1a-83d4-1df1a9c96222.jpg"
+                            alt="">
+                        <h4>제주아쿠아플라넷+잠수함</h4>
+                        <p>인기 관광지 2종 67,000원~</p>
+                    </li>
+                    <li>
+                        <img src="http://image6.coupangcdn.com/image/bannerunit/bannerunit_c2853c09-6910-410a-825c-e95f8f0f5464.jpg"
+                            alt="">
+                        <h4>웨스틴조선 부산 단독특가</h4>
+                        <p>5성급 오션뷰 호텔 10% 할인</p>
+                    </li>
+                    <li>
+                        <img src="http://image9.coupangcdn.com/image/bannerunit/bannerunit_919b0d53-f493-4a8c-a204-0be486d1839f.jpg"
+                            alt="">
+                        <h4>오사카 자유여행 3일</h4>
+                        <p> 와우특가 40만원대부터~</p>
+                    </li>
+                    <li>
+                        <img src="http://image9.coupangcdn.com/image/bannerunit/bannerunit_1b7563d9-bcdb-473c-9f76-34f9d048b2bd.jpg"
+                            alt="">
+                        <h4>북해도 당일 버스투어</h4>
+                        <p>후라노+비에이 69,000원</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="item">
+                <h3>고객님을 위한 여행상품</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//image6.coupangcdn.com/image/static/booking/image/pension/ddnayo/175ec264-8344-41db-8e03-3cc157b1242c.jpg"
+                                alt="">
+                            <span>
+                                [제주] 서귀포잠수함+세계자동차박물관</span>
+                            <p>50,200원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//thumbnail9.coupangcdn.com/thumbnails/remote/800x400q65crop400x400/image/travel_reactor/travelConnect/hotel/C00655061/27a9a5ba-dbc2-4938-ba87-d7411e49846d.jpg"
+                                alt="">
+                            <span>[하노이] 인천출발 아시아나항공 하노이 자유여행..</span>
+                            <p>999,990원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="//thumbnail9.coupangcdn.com/thumbnails/remote/800x400q65crop400x400/image/travel_reactor/travelSeller/common/A00186378/1d15d35e-1dc8-4e3e-bb29-6690f9373b02.jpg"
+                                alt="">
+                            <span>[밀양] 밀양 미리미동국 체험 이용권...</span>
+                            <p>11,500원</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="//thumbnail10.coupangcdn.com/thumbnails/remote/800x400q65crop400x400/image/travel_reactor/travelConnect/hotel/C00655061/02e190bd-3255-4588-9ef5-8be967e29689.jpg"
+                                alt="">
+                            <span>[제주렌트카 할인] 제주허브렌트카 전기차량 코나EV...</span>
+                            <p>44,000원</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <img src="//thumbnail10.coupangcdn.com/thumbnails/remote/800x400q65crop400x400/image/travel_reactor/travelSeller/common/A00782195/516472f5-28e2-4c09-94d1-5f3358638eb9.jpg"
+                                alt="">
+                            <span>[제주] 헬로키티+관광지 빅2 가볼만한곳 0</span>
+                            <p>12,600원</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
     </div>
 
+    <!-- footer시작 -->
+    <footer>
+        <div class="footer1">
+            <a href="#" class="list1">회사소개</a>
+            <a href="#" class="list2">Investor Relations</a>
+            <a href="#" class="list3">인재채용</a>
+            <a href="#" class="list4">입점 / 제휴문의</a>
+            <a href="#" class="list5">공지사항</a>
+            <a href="#" class="list6">고객의 소리</a>
+            <a href="#" class="list7">이용약관</a>
+            <a href="#" class="list8">개인정보 처리방침</a>
+            <a href="#" class="list9">쿠팡페이 이용약관</a>
+            <a href="#" class="list10">쿠팡페이 개인정보처리방침</a>
+            <a href="#" class="list11">신뢰관리센터</a>
+            <a href="#" class="list12">제휴마케팅</a>
+            <a href="#" class="list13">광고안내</a>
+            <select label="Global site">
+                <option><a href="#">Coupang Taiwan 酷澎台灣</a></option>
+            </select>
+        </div>
+        <div class="footer2 clearfix">
+            <div id="box1">
+                <p><a href="#" title="COUPANG"><img src="../img/coupang_footer.png" alt=""></a></p>
+            </div>
+            <div id="box2">
+                <p>
+                    상호명 및 호스팅 서비스 제공 : 쿠팡(주) <br>
+                    대표이사 : 강한승,박대준 <br>
+                    서울시 송파구 송파대로 570 <br>
+                    사업자 등록번호 : 120-88-00767 <br>
+                    통신판매업신고 : 2017-서울송파-0680<br>
+                    <a href="#" title="사업자정보 확인">사업자정보 확인 ></a>
+                </p>
+            </div>
+            <div id="box3">
+                <a id="a1" href="#" title="365고객센터">365고객센터</a>
+                <a id="a2" href="#" title="365고객센터">전자금융거래분쟁처리담당</a>
+                <a id="a3" href="#" title="365고객센터">1577-7011(유료)</a>
+                <a id="a4" href="#" title="365고객센터">서울시 송파구 송파대로 570</a>
+                <a id="a5" href="#" title="365고객센터">email : help@coupang.com</a>
+
+            </div>
+            <div id="box4">
+                <p>
+                    <span>우리은행 채무지급보증 안내</span><br>
+                    당사는 고객님이 현금 결제한 금액에 대해 <br>
+                    우리은행과 채무지급보증 계약을 체결하여 <br>
+                    안전거래를 보장하고 있습니다.<br>
+                    <a href="#" title="서비스 가입사실 확인">서비스 가입사실 확인 ></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer3">
+        </div>
+        <div class="footer4 clearfix">
+            <p>
+                사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.<br>
+                마켓플레이스(오픈마켓) 상품의 경우 쿠팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다.<br>
+                쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.<br>
+                쿠팡은 소비자 보호와 안전거래를 위해 신뢰관리센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이 발생할 경우 별도의 분쟁 처리절차에 의거 분쟁이
+                처리됩니다.<br>
+            </p>
+            <!-- <div class="link">
+                <ul>
+                    <li><a href="#" id="face" title="쿠팡 페이스북"></a></li>
+                    <li><a href="#" id="blog" title="쿠팡 블로그"></a></li>
+                    <li><a href="#" id="insta" title="쿠팡 인스타그램"></a></li>
+                </ul>
+            </div> -->
+        </div>
+    </footer>
 
 </body>
 

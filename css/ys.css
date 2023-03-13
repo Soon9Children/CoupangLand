@@ -1,0 +1,381 @@
+@import url('../css/common.css');
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'apple sd gothic neo', 'malgun gothic', nanumbarungothic, nanumgothic, dotum, sans-serif !important;
+}
+/* header 시작 */
+header {
+    background: #03c2a5;
+    height: 15%;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    color:white;
+}
+header .header-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .h-list {
+    padding: 15px 10px;
+    padding-left: 26%;
+    font-size: 0.7em;
+    color:white;
+   
+}
+
+header .h-list li {
+    float: left;
+}
+
+header .h-list li::after {
+    content: "|";
+    color: #fff;
+    opacity: 0.4;
+    padding: 0 12px;
+}
+
+header .search {
+    padding: 2px 20px;
+}
+
+header .search h1 {
+    width: 25%;
+    font-weight: 700;
+    font-size: 1.3em;
+    float: left;
+    padding-left: 10%;
+    padding-top: 5px;
+    
+}
+
+header .search .input {
+    width: 75%;
+    float: left;
+}
+
+header .search input {
+    padding: 10px;
+}
+header .search .input a{
+    background-color: white;
+    float:right;
+    width: 38px;
+    height: 38px;
+    margin-right: 300px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAZlBMVEX///8AAADb29v5+fnY2Njn5+ekpKSzs7NJSUkSEhLQ0NBsbGybm5vs7Oze3t7w8PAdHR3Hx8d6enqJiYmUlJS6urpnZ2c/Pz9zc3MZGRnAwMBQUFCCgoIoKCg5OTkJCQlYWFgyMjKT/LmIAAAEvUlEQVRoge1b2ZKbMBA0Fvd9GIyxMeT/fzKxRuBrzYyucqqSftiHLYlGUk/PSMi7HQ2F2/qXLiyjyYnKY1f7bZwRu+rBG5pr5LxhGusgt8ucBfP4TrwgCn3PFjOr+tNnZoGuZTa4gyPKzFGm5qmnJ4ZfSRoMVbzfx9UQpP3Lex2Mjn54WOmoS933Fp6fPLbxjVHn3frUUzIUn5oVcX3nD394QRX46xOPAaLmbJjXxo2BuWfJSj1Q2scr/Vk77uJykVhF7eKGC32rx71OuZSC2uWNLzrcB/GQRHIGi0Z07NW5G5VhAwbh/8nH4EBwgf7jXqWzJ1Z+VhO9GHeoGjI99O9U+or1ThSp70+Y5XsKnTfq3OszpDUfG+Be2QO5XqzUjRSA0I1cjQOeetbl3u1qedHCdI0m0jJYfU3vkMNkKcX3KwpYQHJm2HWqvvYTKshL1OaDboA/A8KdWtlBPWKuCoaal2bygclJv6GSsJpJao0oAA1RdlSBpDoJyCeiWzJegx9NcosEV+IqggUi1Yp07Iky6i0MXNh1iLXKTgppCIfLhx4jrbjcTsZ3uqAkTHKzUXO7g9vcuN3GGy3IjT+YMO/c1iPVcncLV9zgG+V6E0OD653wfoqAVLnVouD7DENb62cwtD5x0ddTR4kZSGs8od3BU9tho4FvKcpvSLFa/GJNb2JWt4rxzoqxA/geKNqoxkNL/nYDiHmDvDRexNyRRwh5REl8ivBOSA07GduovKMYkSrS3C7pHQwjtzrt5d8suKPNUJsQcusms0Vef9Nefcz8NcCfvXVC0VrZMQASbFZji8XEiOkp44q083HMQSu0kbahU0CFT2ptrZQ5YGIXW7XRxqYhxKM4t+XuhUNw7hCLRkXwKC8pjUbjX8PZ+fZc7EAKdpPGcwscqKLLyXPLbJqc1+RH9CC5pb2jHKCQ2NquAOCYfzZLzvfHEcE5U9wHZZGV5Bji5OixlQzgcwMpZcARteZH2EfAXoVWJjDucqU5j4VLDUTvgC8sml+17gjkHheadBrwl4n8sQgWiRIaONhVVkKNOcX3EmoDQB4wUceCa1yl1Av5hWCICEBssm4NFq+7e4HCTb4ovBhgF9wKtYn48K8R7mLOlXSbKL83ALTmqJ02FOKuz6xktKx3HB12Ji5klQrHBfn1zu1ESictyz0n6ZATy+2I+yqTErvQvHOSGry7XM6rxRc1xeJkGYLTke89ZPXS5xbf+0iDPV/ueE09ae68ZrmVdQVf20/qqtuxdSBO4iKJkeWXhdrplyDZ66z7rvq10h8PG3m28M9rw+khh7o6mn/wi9tsNsNP468O4UOj5zuIgl31bLO4OI8ou7SN3dwrmJe7cft08/M246/12rLuqgV5tgppRXQax9tl65f/1j+szKJ55XNdzw9f6d/xSRR6quOIm4171n9W4xJ/DAfBrqo6wZ9+GP853XZBV3/sHPvg0J/vl9zPdRoQpKSrukcwxoos+/OXXJFrq04LWk6rz25CdcowpTo1aOV3fXad/K7PLlRn+Ycnn9i/uu6a+d0M+5fiPTfotPL4stN+deb/O+23Vfddp/2HVfdPOu2iOms/raSwz18hF6qbvkMO7JYuS+Dw5qlnvwHwOixE+fDp0gAAAABJRU5ErkJggg==') 
+                            no-repeat center / cover;
+}
+/* section 시작 */
+section {
+    width: 100%;
+    height: 800px;
+    background: url('../img/영수/롯데호텔.png') 
+    no-repeat right / cover;
+}
+
+section nav {
+    position: relative;
+    top: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    
+}
+
+section nav .main {
+    padding: 20px;
+}
+
+section nav .main .main-list {
+    border-top: 1px solid gray;
+    float: left;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+    margin-right: 20px;
+}
+
+section nav .main .main-list:hover {
+    border-top: 4px solid lightgray;
+}
+
+section nav .main .main-list li {
+    margin: 10px 0px 0px;
+}
+
+section nav .main .main-list span {
+    display: block;
+}
+/* nav 국내여행 시작 */
+nav {
+    height: 30%;
+    color:rgba(0, 0, 0, 0.74);
+}
+
+nav .category h3 {
+    height: 15%;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 25px 100px 10px;
+    position: relative;
+    top: 10px;
+}
+
+nav .category ul {
+    /* height: 100px; */
+    margin-left: 5%;
+    width: 80%;
+    overflow: hidden;
+}
+
+nav .category ul li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 18%;
+    height: 200px;
+    text-align: center;
+    border: 1px solid rgba(211, 211, 211, 0.24);
+    overflow: hidden;
+}
+
+nav .category ul li:hover a img{
+    transform: scale(1.2);
+    transition-duration: 0.5s
+}
+nav .category ul li a img {
+    width: 100%;
+    height: 80%;
+}
+nav .category ul li a span {
+    height: 20%;
+}
+nav .category ul li a span:hover {
+    height: 20%;
+    text-decoration: underline;
+}
+nav .category ul li a .category-name {
+    position: relative;
+    top: 7%;
+}
+/* nav 해외여행 */
+
+nav .travel h3{
+    height: 15%;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 25px 0;
+    position: relative;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.812);
+}
+nav .travel ul li{
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+}
+nav .travel ul li:hover h4{
+ text-decoration: underline;
+}
+nav .travel ul li:nth-child(2n+1){
+    clear: both;
+}
+nav .travel ul li img{
+    height: 70%;
+    padding-bottom: 20px;
+}
+nav .travel ul li h4{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.668);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+nav .travel ul li p{
+    color: rgba(0, 0, 0, 0.634);
+    font-size: 0.8em;
+}
+/* 고객 여행상품 시작 */
+nav .item{
+    border: 4px solid blue;
+    width: 100%;
+}
+nav .item h3{
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 25px 0;
+    color: rgba(0, 0, 0, 0.812);
+    
+}
+
+nav .item ul li a{
+    float: left;
+    width: 20%;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+}
+
+nav .item ul li a img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-bottom: 20px;
+    
+}
+nav .item ul li a span{
+    font-size: 12px;
+    color: black;
+}
+nav .item ul li a p{
+    padding-top: 5px;
+    font-weight: 700;
+    color: black;
+}
+nav .item ul li:last-child{
+    margin-right: 0;
+
+}
+
+
+/* footer > .footer1 */
+footer{
+    width: 100%;
+}
+footer .footer1 {
+    
+    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    font-size: 0.7em;
+    
+}
+footer .footer1 a {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid #a09b9b;
+}
+footer .footer1 a:first-child {
+    border: none;
+}
+footer .footer1 .list8, 
+footer .footer1 .list10 {
+    font-weight: 700;
+}
+
+footer .footer1 div .globalsite {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+/* footer > .footer2 */
+footer > .footer2 {
+    width: 60%;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0; 
+    
+}
+footer .footer2  div {
+    float: left;
+    font-size: 0.6em; 
+    text-align: left;
+    line-height: 1.6;
+    margin-right: 10px;
+}   
+footer .footer2 #box1 {
+    width: 15%;
+    height: 35px;
+   
+    background-repeat: no-repeat;
+}
+footer .footer2 #box2 {
+    width: 20%;
+    
+}
+footer .footer2 #box3 {
+    width: 30%;
+}
+footer .footer2 #box3 a {
+    display: block;
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+footer .footer2 #box3 #a1 {
+    font-weight: 700;
+    display: inline;
+    border-right: 1px solid #333232;
+}
+footer .footer2 #box3 #a2 {
+    display: inline;
+}
+footer .footer2 #box3 #a3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .footer2 #box2 p a,  
+footer .footer2 #box4 p a {
+    text-decoration: underline;
+}
+
+footer .footer2 #box4 {
+    width: 25%;
+}
+footer .footer2 #box4 span {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* footer > .footer3 */
+footer > .footer3 { 
+    padding: 20px;
+
+}
+
+/* footer > .footer4 */
+
+footer .footer4 {    
+    background-color: #333232;
+    padding: 20px 0;
+    
+}
+footer .footer4 p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    text-align: left;
+}
+footer .footer4 .link {
+    position: relative;
+    left: 300px;
+}
+
+footer .footer4 ul li a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    
+}
+footer .footer4 ul li #face {
+    background-image: url('../img/facebook.png');
+}
+footer .footer4 ul li #blog {
+    background-image: url('../img/naver.png');
+}
+footer .footer4 ul li #insta {
+    background-image: url('../img/insta.png');
+}
+
+footer .footer4 p {
+    text-align: left;
+    color: #a09b9b;
+}
+
+
+
