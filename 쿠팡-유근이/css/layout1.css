@@ -519,6 +519,8 @@
     display: none;
     transition: 0.5s;
     opacity: 0;
+
+    box-shadow: 2px 2px 20px black;
 }
 
 .left-container li:nth-child(4n):hover a{
