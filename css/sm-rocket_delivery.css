@@ -3,13 +3,12 @@
 body {
     background: #fff;
     font-size: 14px;
-    
 }
 
 #wrapper {
     width: 65%;
     margin: 0 auto;
-    
+    position: relative; 
 }
 
 header {
@@ -17,37 +16,113 @@ header {
 }
 /* 큰 컨테이너 */
 .container {
-    border: 4px solid pink;
+    /* border: 4px solid pink; */
 }
 
 /* 사이드메뉴 */
 
 .side-menu {
-    border: 4px solid blue;
-    float: left;
+    /* border: 4px solid blue; */
+    border: 0.5px solid #ddd;
+    padding: 10px;
+    font-size: 0.85em;
     width: 15%;
+    float: left;
 }
 
 .side-menu .search {
-   
-
+   border-bottom: 0.5px solid #ddd;
+   padding: 10px;
+   line-height: 2.2;
 }
-.side-menu .search span {
 
+.side-menu .search span {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.side-menu .search span.rocket {
+    color: rgb(7, 141, 194);
+    font-style: italic;
+    font-size: 1.2em;
+}
+.side-menu .search ul.rocket-detail {
+    margin-left: 10px;
+    padding: 5px;
+}
+.side-menu .search span.rocket-wow {
+    color: rgb(10, 90, 211);
+    font-style: italic;
+    font-size: 1.1em;
+}
+.side-menu .search span.rocket-abroad {
+    color: rgb(154, 10, 211);
+    font-style: italic;
+    font-size: 1.1em;
+}
+.side-menu .search span.regular-delivery {
+    color: rgb(250, 185, 8);
+    font-size: 1.1em;
+}
+.side-menu .search span.avenue {
+    color: rgb(16, 7, 134);
+    font-size: 1.1em;
 }
 
 .side-menu .search .search-option {
-
+    /* border: 1px solid #000; */
+    margin-top: 3px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.side-menu .search .search-more {
-
+.side-menu .search .search-option::after {
+    /* border: 1px solid #000; */
+    content: 'ᨆ';
+    margin-right: 5px;
 }
-
-.side-menu .search .search-option:hover,
-/* .side-menu .search .check,  */
-.side-menu .search .search-more:hover {
+.side-menu .search .search-option:hover
+, .side-menu .search ul li:hover
+, .side-menu .search .search-more:hover
+, .side-menu .search .search-opt:hover
+{
     color: rgb(7, 141, 194);
+}
+
+.side-menu .search ul.check {
+    /* border: 1px solid #000; */
+    margin-top: 5px;
+}
+.side-menu .search ul.check li {
+    /* border: 1px solid #000; */
+    padding-left: 10px;
+    display: flex;
+}
+.side-menu .search .search-more {
+    /* border: 1px solid #000; */
+    margin-left: -6px;
+}
+.side-menu .search .search-blue {
+    color: rgb(21, 105, 216);
+    font-weight: 700;
+    margin-left: 5px;
+}
+.side-menu .search .search-opt span {
+    color: orange;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-left: 8px;
+}
+.side-menu .search .box {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+}
+.side-menu .search .box .text {
+    width: 40px;
+    height: 25px;
+}
+.side-menu .search .box span {
+    font-weight: 400;
 }
 
 
@@ -57,11 +132,10 @@ header {
 
 /* 컨텐츠 */
 .contents {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     float: right;
     width: 85%;
     padding: 10px;
-    position: relative;
     /* padding: 30px; */
 }
 
@@ -69,22 +143,28 @@ header {
    
 }
 .contents .banner-container .banner-img {
-    border: 1px solid #747373;
-    width: 765px;
+    border: 0.5px solid #aaa;
+    width: 75%;
     height: 324px;
     float: left;
+    overflow: hidden;
 }
-
+.contents .banner-container .banner-img img {
+    width: 100%;
+}
 .contents .banner-container .banner-box .banner-menu {
-    width: 251px;
-    border: 0.5px solid #747373;
+    width: 25%;
+    border: 0.5px solid #aaa;
     float: right;
     overflow: hidden; 
+}
+.contents .banner-container .banner-box .box {
+    border: 0.5px solid #aaa;
 }
 
 .contents .banner-container .banner-box .banner-menu-last {
     text-align: center;
-    line-height: 30px;
+    line-height: 18px;
 }
 .contents .banner-container .banner-menu:hover {
     border: 2px solid rgb(4, 149, 206);
@@ -107,7 +187,7 @@ header {
 
 .contents .banner1 {
     margin-top: 20px;
-    background: url('../img/sm/banner1.jpg') no-repeat center/cover;    
+    background: url('../img/sm/banner1.jpg') no-repeat center/cover; 
 }
 
 .container .banner2 {
@@ -130,12 +210,13 @@ header {
 }
 
 .contents .categoty-title-line span {
-    position: absolute;
-    left: 42.5%;
+    font-family: "맑은 고딕", "malgun gothic", "나눔고딕", "nanumgothic", "돋움", "dotum", sans-serif;   
+    font-size: 2em;
+    color: #747373;
     background: #fff;
     padding: 15px 60px;
-    font-size: 1.4em;
-    font-family: "apple sd gothic neo", "맑은 고딕", "malgun gothic", "나눔고딕", "nanumgothic", "돋움", "dotum", sans-serif;   
+    position: absolute;
+    left: 42.5%;
 }
 
 .contents .category-items .item {
@@ -163,7 +244,6 @@ header {
 
 .contents .category-items .item .item-name{
     /* border: 1px solid #000; */
-    text-align: center;
     margin: 20px 0 30px;
     font-weight: 700;
 }
@@ -181,17 +261,14 @@ header {
 }
 
 .contents .rocket-bar {
-    /* border: 1px solid blue; */
+    background: #f6f6f6;
+    padding: 10px;
 }
 
 .contents .rocket-bar .rocket-nav {
     /* background: pink; */
     float: left;
     margin-left: 20px;
-}
-.contents .rocket-bar .rocket-click {
-    background: aqua;
-    float: right;
 }
 .contents .rocket-bar li {
     display: block;
@@ -200,6 +277,24 @@ header {
     font-size: 0.9em;
 }
 
+.contents .rocket-bar .dropdown{
+    position : relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.contents .rocket-bar .dropdown-content {
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+}
+.contents .rocket-bar .dropdown-content a {
+    /* display : block; */
+}
+.contents .rocket-bar .dropdown:hover .dropdown-content {
+    display: block;
+    top: 40px;
+}
 
 
 /* 로켓배송 판매리스트 */
@@ -299,13 +394,27 @@ header {
 
 /* 로켓배송 판매리스트 끝 */
 
+
 .page {
-    position: fixed;
+    background: #f6f6f6d0;
+
+    padding: 10px;
+    left: -10px;
+    width: 100%;
     bottom: 20px;
-    left: 50%;
+
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page a {
-    margin: 5px;
+    /* border: 1px solid #000; */
+    padding: 10px;
     text-align: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #666;
 }

@@ -5,23 +5,34 @@
 header .topbar {
     background-color: #cecccc;
     font-size: 0.6em;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-header .topbar .left ul {
+header .topbar .left > ul {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-left: 50px;
 }
-header .topbar .left ul li {
-    float: left;
+header .topbar .left ul li {  
     padding: 8px;
 }
 
 header .topbar .right > ul {
-    float: right;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
     padding: 8px;
     margin-right: 50px;
 }
 header .topbar .right ul li {
+    padding: 8px;
     display: flex;
+
 }
 header .topbar .left .dropmenu1 {
     width: 120px;
@@ -29,7 +40,7 @@ header .topbar .left .dropmenu1 {
     background: #f3f6f7; 
     visibility: hidden;  
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 60px;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 }
@@ -54,7 +65,7 @@ header .topbar .right .drop {
     background: #f3f6f7; 
     visibility: hidden;  
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 10px;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
         
@@ -78,7 +89,7 @@ header .container {
 }
 
 header .container .table {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     border: 1px solid #000;;
     
@@ -99,20 +110,59 @@ header .container .bar1 {
 header .container .bar2 {
     width: 170px;
     height: 41px;
-    
+    border: 1px solid #000;
 }
 header .container .bar2 img {
     width: 100%;
 
 }
 header .container .bar3 {
-    border: 1px solid #000;
+
+    border: 1px solid #4052f7;
     width: 488px;
     height: 41px;
+    display: flex;
+    
+    
 }
-header .container .bar3 input {
-    width: 300px;
-    height: 38px;
+
+header .container .bar3 .select select {
+    display: flex;
+    outline: none;
+    /* width: 10%; */
+    height: 100%;
+    font-size: 0.6em;
+}
+header .container .bar3 .search {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+header .container .bar3 .search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+header .container .bar3 .search .m_img {
+    width: 8%;
+    margin: 4px;
+    background-image: url('../img/cw/mic.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* border: 1px solid #000; */
+}
+
+header .container .bar3 .search .s_img {
+    width: 10%;
+    margin-top: 2px;
+    margin-left: 6px;
+    background-image: url('../img/cw/search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid #000; */
 }
 
 
@@ -186,13 +236,16 @@ footer .footer1 div .globalsite {
 
 footer > .footer2 {
     width: 60%;
+    margin: 0 auto;
     border-bottom: 1px solid #ccc;
     padding: 20px 0; 
-    
+    display: flex;
+   
+   
 
 }
-footer .footer2  div {
-    float: left;
+footer .footer2 div {
+    
     font-size: 0.6em; 
     text-align: left;
     line-height: 1.6;
@@ -201,7 +254,6 @@ footer .footer2  div {
 footer .footer2 #box1 {
     width: 15%;
     height: 35px;
-   
     background-repeat: no-repeat;
 }
 footer .footer2 #box2 {
@@ -242,8 +294,21 @@ footer .footer2 #box4 span {
 }
 
 /* footer > .footer3 */
-footer > .footer3 { 
-    padding: 20px;
+footer  .footer3 { 
+    width: 60%;
+    height: 80px;
+    margin: 0 auto;
+
+    /* border: 1px solid #000; */
+}
+.footer3 .list_img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/footer3.png');
+    background-size: ;
+    background-repeat: no-repeat;
+    margin: 0 50px;
+    /* border: 1px solid #000; */
 
 }
 
@@ -255,19 +320,27 @@ footer .footer4 {
     background-color: #333232;
     padding: 20px 0;
     
+   
+}
+footer .footer4 .footer4-1 {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 footer .footer4 p {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-size: 0.7em;
     text-align: left;
 }
-footer .footer4 .link {
-    position: relative;
-    left: 300px;
-
-
-
+footer .footer4 .link ul {
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
 footer .footer4 ul li a {
@@ -279,8 +352,6 @@ footer .footer4 ul li a {
     background-size: cover;
     float: left;
     
-    
-
 }
 footer .footer4 ul li #face {
     background-image: url('../img/facebook.png');

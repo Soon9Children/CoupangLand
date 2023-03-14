@@ -1,9 +1,233 @@
 @import url(common.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
 
 *{
     font-family: sans-serif;
 }
 
+/* 헤더 시작 */
+
+header{
+    width: 100%;
+    height: 179px;
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
+    /* background: gray; */
+}
+
+header .article{
+    width: 100%;
+    height: 32px;
+    background-color: #e7e5e5;
+}
+header .article .article-container{
+    width: 1020px;
+    height: 32px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header .article .article-container #article-subscribe{
+    display: flex;
+    margin-left: 15px;
+    position: relative;
+}
+header .article .article-container #article-subscribe>li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+
+}
+.enter{
+    width: max-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #000;
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+    top: 100%;
+    margin-bottom: 10px;
+    z-index: 9999;
+}
+
+.enter a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+header .article .article-container #article-subscribe li:nth-child(2):hover .enter,
+header .article .article-container #article-subscribe li .enter:hover{
+    display: block;
+
+}
+
+header .article .article-container #article-menu{
+    display: flex;
+}
+header .article .article-container #article-menu li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+header .article .article-container #article-menu li:last-child:hover .enter{
+    display: block;
+}
+
+header .header{
+    width: 1020px;
+    height: 147px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+header .header .header-container{
+    /* overflow: hidden; */
+    height: 145px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .header .header-container .header-category{
+    width: 115px;
+    height: 145px;
+    position: relative;
+    background: rgb(83, 81, 197);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header .header-container .header-category i{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    /* background-color: #a09b9b; */
+}
+
+header .header .header-container .header-category:hover .enter{
+    display: block;
+    /* border: 1px solid #000; */
+    color: black;
+}
+
+
+header .header .header-container .search-container{
+    width: 880px;
+    height: 115px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header .header .header-container .search-container .header-search{
+    height: 70px;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+header .header .header-container .search-container .header-search img{
+    flex: 2;
+}
+header .header .header-container .search-container .header-search .header-search-go{
+    flex: 5;
+    border: 3px solid blue;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first{
+    flex: 3;
+    display: flex;
+    /* background-color: aqua; */
+}
+header .header .header-container .search-container .header-search .header-search-go .search .search-first a{
+    display: block;
+    background-color: aqua;
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first a:last-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search-go .search input{
+    flex: 5;
+    border: none;
+    border-left: 2px solid gray;
+    height: 27px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search a{
+    flex: 1;
+}
+
+
+
+
+header .header .header-container .search-container .header-search a{
+    flex: 1;
+}
+header .header .header-container .search-container .header-search .search{
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search input{
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-left: 1px solid gray;
+    position: relative;
+    top: 3px;
+}
+
+
+
+header .header .header-container .search-container .header-search-go a{
+    flex: 3;
+}  
+
+header .header .header-container .search-container .header-nav{
+    height: 45px;
+    border: 1px solid #000;
+    background-color: aqua;
+}
+
+
+
+
+/* 헤더 끝 */
 
 /* 배너 시작 */
 .banner-container{
@@ -565,7 +789,7 @@
 .left-container li a+a{
     position: absolute;
     left: 50px;
-    bottom: 7px;
+    bottom: -5px;
     /* background-color: blue; */
     display: none;
     transition: 0.5s;

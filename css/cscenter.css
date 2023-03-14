@@ -1,9 +1,14 @@
 @import url(../css/common.css);
 
+section.win {
+    width: 100%;
+    border-bottom: 3px solid #ccc;
+}
+
 section.container {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
-    border-bottom: 4px solid #ccc;
+    font-family: FontAwesome;
 }
 
 section.container .first {
@@ -11,6 +16,8 @@ section.container .first {
     padding: 20px 0;
     background: #516eee;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 section.container .first .title {
@@ -18,61 +25,113 @@ section.container .first .title {
     text-align: center;
     font-size: 1.5em;
     font-weight: 700;
-    flex: 1;
+    width: 20%;
+    /* border: 1px solid #000; */
     
 
 }
 section.container .first .search {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background: #fff;
-    flex: 3;
+    width: 50%;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    
+    
 } 
+section.container .first .search input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+section.container .first .search .img {
+    width: 10%;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+    /* border: 1px solid #000; */
+   
+}
 
-section.container .first .title .icon .i {
+section.container .first .search .img i{
+    /* border: 1px solid #000; */
     color: #516eee;
-    display: block;
+    font-size: 1.5em;
+
+   
 }
-section.container .first .title .icon:hover .i {
-    background: #052ace;
-    color: #fff;
+
+section.container .first .search .img:hover {
+   background: #052ace;
+
 }
+
 section.container .first .chat {
+    font-size: 0.6em;
+    
     display: block;
-    width: fit-content;
+    width: 17%;
+    padding: 10px 0;
+    margin: 0 30px 0 40px;
     background: #052ace;
+    
     color: #fff;
-    flex: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.container .first .chat div {
+    width: fit-content;
+    font-size: 2em;
+    /* border: 1px solid #000; */
+
+}
+
+section.container .first .chat span {
+    width: 40%;
+    display: block;
+    /* border: 1px solid #000; */
 }
 
 /*  section.container .second 두번째 줄 메뉴 */
 
 section.container .second {
     display: flex;
+    justify-content: space-around;
     border-bottom: 1px solid #ccc;
     font-size: 0.8em;
     font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
 section.container .second .menu {
     display: flex;
+    flex: 5;
 }
 
 section.container .second .menu a {
     margin-bottom: 10px;
     padding: 10px;
-    display: block;
+    /* display: block; */
     
 }
-section.container .second .menu a:hover {
+section.container .second  a:hover {
     color:#516eee;
 }
 
 section.container .second .id {
-    margin-left: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
+    flex: 2;
+
+    margin-left: 150px;
     font-size: 0.8em;
+    padding-right: 10px;
     display: flex; 
     border-right: 1px solid #ccc;
 
@@ -83,9 +142,12 @@ section.container .second .id a {
 
 
 section.container .second .cus {
+    flex: 2;
+    margin-left: 20px;
     color: #516eee;
     font-weight: 400;
     font-size: 0.8em;
+    /* padding-left: 10px; */
     
 }
 section.container .second .cus span {
@@ -109,14 +171,66 @@ section.container .list ul {
 }
 
 section.container .list li {
-    padding: 20px 0;
+    text-align: center;
+    width: 10%;
+    padding: 15px 0;
     border: 0.5px solid #e0dada;
+    color: #444343;
 }
+
+/* container .cs .cs-list */
+.cs {
+    width: 100%;
+    margin: 20px auto;
+    
+}
+.cs .cs-list {
+    width: 100%;
+    cursor: pointer;
+    list-style: none;
+
+    
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e0dada;
+}
+
+.cs .cs-list li {
+    padding: 20px;  
+    font-size: 0.8em;
+    
+}
+.cs .cs-list .txt {
+    flex: 4;
+    text-align: left;
+}
+.cs .cs-list .Q {
+    flex: 1;
+    color: #052ace;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.cs .cs-list li .img {
+    flex: 1;
+    
+}
+.cs .cs-list li.more {
+    color: #052ace;
+    list-style: none; 
+
+
+   }
+
+
 
 /* aside.side-bar  */
 aside.side-bar {
     position: absolute;
-    left: 1700px;
+    top: 200px;
+    right: 200px;
+
 }
 
 aside.side-bar .ban {
@@ -129,6 +243,9 @@ aside.side-bar .ban {
 aside.side-bar .ban img {
     width: 100%;
 }
+aside.side-bar .sidebar-fix {
+     position: fixed;
+}
 
 aside.side-bar .last  {
     margin-top: 20px;
@@ -137,6 +254,7 @@ aside.side-bar .last  {
    background: #000;
    width: fit-content;
    font-size: 0.7em;
+  
 
    
 }
