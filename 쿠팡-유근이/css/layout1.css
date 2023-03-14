@@ -4,7 +4,6 @@
     font-family: sans-serif;
 }
 
-
 /* 배너 시작 */
 .banner-container{
     position: relative;
@@ -565,7 +564,7 @@
 .left-container li a+a{
     position: absolute;
     left: 50px;
-    bottom: 7px;
+    bottom: -5px;
     /* background-color: blue; */
     display: none;
     transition: 0.5s;
