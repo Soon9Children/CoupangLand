@@ -5,23 +5,34 @@
 header .topbar {
     background-color: #cecccc;
     font-size: 0.6em;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-header .topbar .left ul {
+header .topbar .left > ul {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-left: 50px;
 }
-header .topbar .left ul li {
-    float: left;
+header .topbar .left ul li {  
     padding: 8px;
 }
 
 header .topbar .right > ul {
-    float: right;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
     padding: 8px;
     margin-right: 50px;
 }
 header .topbar .right ul li {
+    padding: 8px;
     display: flex;
+
 }
 header .topbar .left .dropmenu1 {
     width: 120px;
@@ -29,7 +40,7 @@ header .topbar .left .dropmenu1 {
     background: #f3f6f7; 
     visibility: hidden;  
     position: absolute;
-    top: 20px;
+    top: 40px;
     left: 60px;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 }
@@ -54,7 +65,7 @@ header .topbar .right .drop {
     background: #f3f6f7; 
     visibility: hidden;  
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 10px;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
         
@@ -107,13 +118,52 @@ header .container .bar2 img {
 
 }
 header .container .bar3 {
-    border: 1px solid #000;
+
+    border: 1px solid #4052f7;
     width: 488px;
     height: 41px;
+    display: flex;
+    
+    
 }
-header .container .bar3 input {
-    width: 300px;
-    height: 38px;
+
+header .container .bar3 .select select {
+    display: flex;
+    outline: none;
+    /* width: 10%; */
+    height: 100%;
+    font-size: 0.6em;
+}
+header .container .bar3 .search {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+header .container .bar3 .search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+header .container .bar3 .search .m_img {
+    width: 8%;
+    margin: 4px;
+    background-image: url('../img/cw/mic.png') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* border: 1px solid #000; */
+}
+
+header .container .bar3 .search .s_img {
+    width: 10%;
+    margin-top: 2px;
+    margin-left: 6px;
+    background-image: url('../img/cw/search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid #000; */
 }
 
 
