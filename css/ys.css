@@ -8,152 +8,258 @@ body{
     margin: 0 auto;
     font-family: 'apple sd gothic neo', 'malgun gothic', nanumbarungothic, nanumgothic, dotum, sans-serif !important;
 }
-/* header 최상단 */
 
-header .topbar {
-    background-color: #cecccc;
-    font-size: 0.6em;
+/* 헤더 시작 */
 
-}
-
-header .topbar .left ul {
+header{
     
-}
-header .topbar .left ul li {
-    float: left;
-    padding: 8px;
+    width: 100%;
+    height: 179px;
+   
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
+    /* background: gray; */
 }
 
-header .topbar .right > ul {
-    float: right;
-    padding: 8px;
-    margin-right: 50px;
+header .article{
+    width: 100%;
+    height: 32px;
+    background-color: #e7e5e5;
 }
-header .topbar .right ul li {
+header .article .article-container{
+    width: 1440px;
+    height: 32px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
     display: flex;
-}
-header .topbar .left .dropmenu1 {
-    width: 120px;
-    padding: 10px;
-    background: #f3f6f7; 
-    visibility: hidden;  
-    position: absolute;
-    top: 20px;
-    left: 60px;
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-}
-header .topbar .left .dropbox:hover .dropmenu1 {
-    visibility: visible;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
 }
 
-header .topbar .left .dropmenu1 li:hover {
+header .article .article-container #article-subscribe{
+    display: flex;
+    margin-left: 15px;
+    position: relative;
+}
+header .article .article-container #article-subscribe>li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+
+}
+.enter{
+    width: max-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #000;
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+    top: 100%;
+    margin-bottom: 10px;
+    z-index: 9999;
+}
+
+.enter a:hover{
     color: blue;
     text-decoration: underline;
+}
+
+header .article .article-container #article-subscribe li:nth-child(2):hover .enter,
+header .article .article-container #article-subscribe li .enter:hover{
+    display: block;
 
 }
 
+header .article .article-container #article-menu{
+    display: flex;
+}
+header .article .article-container #article-menu li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
 
-header .topbar .right .cus {
+header .article .article-container #article-menu li:last-child:hover .enter{
+    display: block;
+}
+
+header .header{
+    width: 1440px;
+    height: 147px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+header .header .header-container{
+    /* overflow: hidden; */
+    height: 145px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
-header .topbar .right .drop {
-    width: 120px;
-    padding: 10px;
-    background: #f3f6f7; 
-    visibility: hidden;  
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-        
-    
-}
-
-header .topbar .right .cus:hover ul {
-    visibility: visible;
-    
-   
-}
-header .topbar .right .cus li:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-
-/* header .container  */
-header .container {
-    border-bottom: 1px solid #000;
-}
-
-header .container .table {
-    width: 75%;
-    margin: 0 auto;
-    border: 1px solid #000;;
-    
-}
-header .container .table .cat {
-    border: 1px solid #000;
-    background: #4052f7;
+header .header .header-container .header-category{
+    width: 115px;
+    height: 145px;
+    position: relative;
+    background: rgb(83, 81, 197);
     color: #fff;
-    padding: 25px;
-    text-align: center;
-    font-size: 0.7em;
-
-}
-
-header .container .bar1 {
-    
-}
-header .container .bar2 {
-    width: 170px;
-    height: 41px;
-    
-}
-header .container .bar2 img {
-    width: 100%;
-
-}
-header .container .bar3 {
-    border: 1px solid #000;
-    width: 488px;
-    height: 41px;
-}
-header .container .bar3 input {
-    width: 300px;
-    height: 38px;
-}
-
-
-header .container .table div.img {
-    width: 50px;
-    height: 54px;
-    
-
-
-}
-header .container .table div.img a {
-    width: 100%;
-    font-size: 0.6em;
-
-}
-
-/* container nav tag */
-
-header .container .menu ul {
     display: flex;
-    margin-left: 40px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+header .header .header-container .header-category i{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    /* background-color: #a09b9b; */
+}
+
+header .header .header-container .header-category:hover .enter{
+    display: block;
+    /* border: 1px solid #000; */
+    color: black;
+}
+
+
+header .header .header-container .search-container{
+    width: 1000px;
+    height: 115px;
+    
+    /* border: 1px solid #000; */
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+}
+
+header .header .header-container .search-container .header-search{
+    height: 70px;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+header .header .header-container .search-container .header-search img{
+    flex: 2;
+}
+header .header .header-container .search-container .header-search .header-search-go{
+    flex: 5;
+    border: 3px solid blue;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first{
+    flex: 3;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first:hover .enter{
+    display: block;
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first a:last-child{
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search-go .search input{
+    flex: 5;
+    border: none;
+    border-left: 2px solid gray;
+    height: 27px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search a{
+    flex: 1;
+}
+
+
+
+
+header .header .header-container .search-container .header-search a{
+    flex: 1;
+}
+header .header .header-container .search-container .header-search .search{
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search input{
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-left: 1px solid gray;
+    position: relative;
+    top: 3px;
+}
+header .header .header-container .search-container .header-search>a{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    line-height: 1.5;
+}
+header .header .header-container .search-container .header-search>a i{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    right: 10px;
+    position: relative;
+}
+
+header .header .header-container .search-container .header-search .my-coupang:hover .enter{
+    display: block;
+}
+
+header .header .header-container .search-container .header-nav{
+    height: 45px;
+    /* border: 1px solid #000; */
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-nav .header-gnb {
+    line-height: 45px;
     font-size: 0.7em;
-}
-header .container .menu ul li {
-    margin-right: 20px;
-}
-header .container .menu ul li:hover {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    
+} 
+header .header .header-container .search-container .header-nav .header-gnb li:hover a{
+    
     color: blue;
     text-decoration: underline;
 }
 
+
+/* 헤더 끝 */
 
 
 /* .travel 시작 */
@@ -161,6 +267,8 @@ header .container .menu ul li:hover {
     width: 85%;
     margin: 0 auto;
     background: #03c2a5;
+
+    
     height: 12%;
     position: fixed;
     z-index: 9999;
@@ -217,7 +325,7 @@ header .container .menu ul li:hover {
     float: right;
     width: 40px;
     height: 40px;
-    margin-right: 440px;
+    margin-right: 600px;
     position: relative;
 }
 .travel .search .input a i{
@@ -230,6 +338,7 @@ header .container .menu ul li:hover {
     height: 50px;
     color: rgba(0, 0, 255, 0.315);
     font-size: 1.5em;
+ 
 }
 /* section 시작 */
 body{
@@ -333,7 +442,7 @@ nav .category ul li a .category-name {
 }
 /* nav 해외여행 */
 
-nav ..travel h3{
+nav .trip h3{
     height: 15%;
     font-weight: 700;
     font-size: 1.4em;
@@ -342,28 +451,28 @@ nav ..travel h3{
     top: 10px;
     color: rgba(0, 0, 0, 0.812);
 }
-nav ..travel ul li{
+nav .trip ul li{
     float: left;
     width: 50%;
     margin-bottom: 25px;
 }
-nav ..travel ul li:hover h4{
+nav .trip ul li:hover h4{
  text-decoration: underline;
 }
-nav ..travel ul li:nth-child(2n+1){
+nav .trip ul li:nth-child(2n+1){
     clear: both;
 }
-nav ..travel ul li img{
+nav .trip ul li img{
     height: 70%;
     padding-bottom: 20px;
 }
-nav ..travel ul li h4{
+nav .trip ul li h4{
     cursor: pointer;
     color: rgba(0, 0, 0, 0.668);
     margin-bottom: 8px;
     font-weight: 700;
 }
-nav ..travel ul li p{
+nav .trip ul li p{
     color: rgba(0, 0, 0, 0.634);
     font-size: 0.8em;
 }

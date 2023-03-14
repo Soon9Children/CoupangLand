@@ -10,92 +10,111 @@
 <link rel="stylesheet" href="../css/ys.css">
 
 
-
+<body>
     <!-- header 시작 -->
+
     <header>
-        <div class="topbar" id="topbar">
-            <!-- header 최상단 -->
-            <div class="left clearfix">
-                <ul>
-                    <li><a href="#" title="즐겨찾기">즐겨찾기</a></li>
-                    <li class="dropbox"><a href="#">입점신청 ▼</a>
-                     <ul class="dropmenu1"> 
-                            <li><a href="#">오픈마켓</a></li>
-                            <li><a href="#">여행티켓</a></li>
-                            <li><a href="#">로켓배송</a></li>
-                            <li><a href="#">제휴마케팅</a></li>
-                        </ul>
+        <div class="article">
+            <div class="article-container">
+                <ul id="article-subscribe">
+                    <li><a href="#">즐겨찾기</a></li>
+                    <li>
+                        <a href="#">입점신청▼</a>
+                        <div class="enter">
+                            <ul>
+                                <li><a href="#">오픈마켓</a></li>
+                                <li><a href="#">여행 / 티켓</a></li>
+                                <li><a href="#">로켓배송</a></li>
+                                <li><a href="#">제휴마케팅</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <div class="right clearfix">
-                        <ul>
-                            <li><a href="#" title="로그인">로그인</a></li>
-                            <li><a href="#" title="회원가입">회원가입</a></li>
-                            <li class="cus"><a href="#">고객센터</a>
-                                <ul class="drop">
-                                    <li><a href="#">자주묻는 질문</a></li>
-                                    <li><a href="#">1:1 채팅문의</a></li>
-                                    <li><a href="#">고객의 소리</a></li>
-                                    <li><a href="#">취소 / 반품 안내</a></li>
-                                </ul>
-                            
-                            </li>
-                        </ul>
-                    </div>
+                </ul>
+                <ul id="article-menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <div class="enter">
+                            <ul>
+                                <li><a href="#">자주하는 질문</a></li>
+                                <li><a href="#">1:1 채팅문의</a></li>
+                                <li><a href="#">고객의 소리</a></li>
+                                <li><a href="#">취소 / 반품 안내</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="container">
-
-        <table class="table">
-            <tr>
-                <td rowspan="2" class="cat">
-                    <div class="bar0"><img></div>
-                    <div class="bar1">카테고리</div>
-                </td>
-            <td>       
-                <div class="bar2"><a href="#" title="Coupang - 내가 잘사는 이유"><img src="../img/coupang.jpg" alt="">
-                </a></div>
-            </td>
-            <td>
-                <div class="bar3">
-                    <div class="select"></div>
-                    <div class="search"><input type="text"></div>
-                </div>
-            </td>
-            <td>
-                
-                <div class="bar4 img"><a href="#">마이쿠팡</a></div>
-            </td>
-            <td>
-                <div class="bar5 img"><a href="#">장바구니</a></div>
-            </td>
-            </tr>
-            
-            <tr>
-                <td colspan="4">
-                <nav class="menu">
-                    <ul>
-                        <li class="m1"><a href="#">로켓배송</a></li>
-                        <li class="m2"><a href="#">로켓프레시</a></li>
-                        <li class="m3"><a href="#">쿠팡비즈</a></li>
-                        <li class="m4"><a href="#">로켓직구</a></li>
-                        <li class="m5"><a href="#">골드박스</a></li>
-                        <li class="m6"><a href="#">와우회원할인</a></li>
-                        <li class="m7"><a href="#">이벤트/쿠폰</a></li>
-                        <li class="m8"><a href="#">착한상정</a></li>
-                        <li class="m9"><a href="#">기획전</a></li>
-                        <li class="m10"><a href="#">여행/티켓</a></li>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-category">
+                    <a href="#"><i class="fa-solid fa-bars"></i>카테고리</a>
+                    <ul class="enter">
+                        <li><a href="#">패션의류/잡화</a></li>
+                        <li><a href="#">뷰티</a></li>
+                        <li><a href="#">출산/유아동</a></li>
+                        <li><a href="#">식품</a></li>
+                        <li><a href="#">주방용품</a></li>
+                        <li><a href="#">생활용품</a></li>
+                        <li><a href="#">홈인테리어</a></li>
+                        <li><a href="#">가전디지털</a></li>
+                        <li><a href="#">스포츠/레저</a></li>
+                        <li><a href="#">자동차용품</a></li>
+                        <li><a href="#">도서/음반/DVD</a></li>
+                        <li><a href="#">완구/취미</a></li>
+                        <li><a href="#">문구/오피스</a></li>
+                        <li><a href="#">반려동물용품</a></li>
+                        <li><a href="#">헬스/건강식품</a></li>
+                        <li><a href="#">여행/티켓</a></li>
+                        <li><a href="#">테마관</a></li>
                     </ul>
-                </nav>
-             </td>
-            </tr>
-        </table>    
-        </div>
+                </div>
+                <div class="search-container">
+                    <div class="header-search">
+                        <img src="../img/coupang.jpg" alt="logo" class="logo">
+                        <div class="header-search-go">
+                            <form action="#" class="search">
+                                <div class="search-first">
+                                    <a href="#">전체</a>
+                                    <a href="#">▼</a>
 
-        
+                                </div>
+                                <input type="text" placeholder="찾고 싶은 상품을 검색해보세요!">
+                                <a href="#"><i class="fa-solid fa-microphone"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </form>
+                        </div>
+                        <a href="#">
+                            마이쿠팡
+                        </a>
+                        <a href="#">
+                            장바구니
+                        </a>
+                    </div>
+                    <div class="header-nav">
+                        <ul class="header-gnb">
+                            <li><a href="#">로켓배송</a></li>
+                            <li><a href="#">로켓프레시</a></li>
+                            <li><a href="#">쿠팡비즈</a></li>
+                            <li><a href="#">로켓직구</a></li>
+                            <li><a href="#">골드박스</a></li>
+                            <li><a href="#">와우회원할인</a></li>
+                            <li><a href="#">이벤트/쿠폰</a></li>
+                            <li><a href="#">착한상점</a></li>
+                            <li><a href="#">기획전</a></li>
+                            <li><a href="#">여행/티켓</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </header>
 
-<body>
+
 
     <!-- travel 시작 -->
     <div class="travel">
@@ -234,7 +253,7 @@
             </div>
         </nav>
         <nav>
-            <div class="travel clearfix">
+            <div class="trip clearfix">
                 <h3>인기트립</h3>
                 <ul>
                     <li>
