@@ -234,10 +234,12 @@ header .header .header-container .search-container .header-search .my-coupang:ho
 
 header .header .header-container .search-container .header-nav{
     height: 45px;
+
     /* border: 1px solid #000; */
     /* background-color: aqua; */
 }
 
+>>>>>>> 52b5a73b0a1fd523ced970b7ce1ea6b3e35150dc
 header .header .header-container .search-container .header-nav .header-gnb {
     line-height: 45px;
     font-size: 0.7em;
