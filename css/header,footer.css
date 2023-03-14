@@ -107,9 +107,15 @@ header .container .bar2 img {
 
 }
 header .container .bar3 {
+
     border: 1px solid #000;
     width: 488px;
     height: 41px;
+    
+}
+header .container .bar3 .select {
+    display: flex;
+    height: 38px;
 }
 header .container .bar3 input {
     width: 300px;
