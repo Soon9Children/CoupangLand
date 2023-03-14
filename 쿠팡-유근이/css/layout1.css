@@ -220,8 +220,22 @@ header .header .header-container .search-container .header-search-go a{
 
 header .header .header-container .search-container .header-nav{
     height: 45px;
-    border: 1px solid #000;
-    background-color: aqua;
+    /* border: 1px solid #000;
+    background-color: aqua; */
+  
+}
+header .header .header-container .search-container .header-nav .header-gnb {
+    line-height: 45px;
+    font-size: 0.7em;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    
+} 
+header .header .header-container .search-container .header-nav .header-gnb li:hover a{
+    
+    color: blue;
+    text-decoration: underline;
 }
 
 
