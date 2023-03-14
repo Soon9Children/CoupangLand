@@ -1,4 +1,5 @@
 @import url('../css/common.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 body{
     margin:0 auto;
 }
@@ -7,21 +8,278 @@ body{
     margin: 0 auto;
     font-family: 'apple sd gothic neo', 'malgun gothic', nanumbarungothic, nanumgothic, dotum, sans-serif !important;
 }
-/* header 시작 */
-header {
+
+/* 헤더 시작 */
+
+header{
+    
+    width: 100%;
+    height: 179px;
+   
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
+    /* background: gray; */
+}
+
+header .article{
+    width: 100%;
+    height: 32px;
+    background-color: #e7e5e5;
+}
+header .article .article-container{
+    width: 1440px;
+    height: 32px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header .article .article-container #article-subscribe{
+    display: flex;
+    margin-left: 15px;
+    position: relative;
+}
+header .article .article-container #article-subscribe>li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+
+}
+.enter{
+    width: max-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #000;
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+    top: 100%;
+    margin-bottom: 10px;
+    z-index: 9999;
+}
+
+.enter a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+header .article .article-container #article-subscribe li:nth-child(2):hover .enter,
+header .article .article-container #article-subscribe li .enter:hover{
+    display: block;
+
+}
+
+header .article .article-container #article-menu{
+    display: flex;
+}
+header .article .article-container #article-menu li{
+    margin-right: 15px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+header .article .article-container #article-menu li:last-child:hover .enter{
+    display: block;
+}
+
+header .header{
+    width: 1440px;
+    height: 147px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+header .header .header-container{
+    /* overflow: hidden; */
+    height: 145px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .header .header-container .header-category{
+    width: 115px;
+    height: 145px;
+    position: relative;
+    background: rgb(83, 81, 197);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header .header-container .header-category i{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    /* background-color: #a09b9b; */
+}
+
+header .header .header-container .header-category:hover .enter{
+    display: block;
+    /* border: 1px solid #000; */
+    color: black;
+}
+
+
+header .header .header-container .search-container{
+    width: 1000px;
+    height: 115px;
+    
+    /* border: 1px solid #000; */
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+}
+
+header .header .header-container .search-container .header-search{
+    height: 70px;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+header .header .header-container .search-container .header-search img{
+    flex: 2;
+}
+header .header .header-container .search-container .header-search .header-search-go{
+    flex: 5;
+    border: 3px solid blue;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first{
+    flex: 3;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first:hover .enter{
+    display: block;
+}
+
+header .header .header-container .search-container .header-search .header-search-go .search .search-first a:last-child{
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search-go .search input{
+    flex: 5;
+    border: none;
+    border-left: 2px solid gray;
+    height: 27px;
+}
+header .header .header-container .search-container .header-search .header-search-go .search a{
+    flex: 1;
+}
+
+
+
+
+header .header .header-container .search-container .header-search a{
+    flex: 1;
+}
+header .header .header-container .search-container .header-search .search{
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+header .header .header-container .search-container .header-search .header-search input{
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-left: 1px solid gray;
+    position: relative;
+    top: 3px;
+}
+header .header .header-container .search-container .header-search>a{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    line-height: 1.5;
+}
+header .header .header-container .search-container .header-search>a i{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    right: 10px;
+    position: relative;
+}
+
+header .header .header-container .search-container .header-search .my-coupang:hover .enter{
+    display: block;
+}
+
+header .header .header-container .search-container .header-nav{
+    height: 45px;
+    /* border: 1px solid #000; */
+    /* background-color: aqua; */
+}
+
+header .header .header-container .search-container .header-nav .header-gnb {
+    line-height: 45px;
+    font-size: 0.7em;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    
+} 
+header .header .header-container .search-container .header-nav .header-gnb li:hover a{
+    
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* 헤더 끝 */
+
+
+/* .travel 시작 */
+.travel {
+    width: 85%;
+    margin: 0 auto;
     background: #03c2a5;
-    height: 15%;
+
+    
+    height: 12%;
     position: fixed;
     z-index: 9999;
     width: 100%;
     color:white;
 }
-header .header-container{
-    width: 80%;
-    margin: 0 auto;
+.travel .travel-container{
+   
 }
 
-header .h-list {
+.travel .h-list {
     padding: 15px 10px;
     padding-left: 26%;
     font-size: 0.7em;
@@ -29,64 +287,81 @@ header .h-list {
    
 }
 
-header .h-list li {
+.travel .h-list li {
     float: left;
-
 }
 
-header .h-list li::after {
+.travel .h-list li::after {
     content: "|";
     color: #fff;
     opacity: 0.4;
     padding: 0 12px;
 }
 
-header .search {
+.travel .search {
     padding: 2px 20px;
 }
 
-header .search h1 {
+.travel .search h1 {
     width: 25%;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-family: 'apple sd gothic neo', 'malgun gothic', sans-serif !important;
     float: left;
     padding-left: 10%;
     padding-top: 5px;
-    
 }
 
-header .search .input {
+.travel .search .input {
     width: 75%;
     float: left;
 }
 
-header .search input {
+.travel .search input {
     padding: 10px;
 }
-header .search .input a{
-    background-color: white;
-    float:right;
-    width: 38px;
-    height: 38px;
-    margin-right: 300px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAZlBMVEX///8AAADb29v5+fnY2Njn5+ekpKSzs7NJSUkSEhLQ0NBsbGybm5vs7Oze3t7w8PAdHR3Hx8d6enqJiYmUlJS6urpnZ2c/Pz9zc3MZGRnAwMBQUFCCgoIoKCg5OTkJCQlYWFgyMjKT/LmIAAAEvUlEQVRoge1b2ZKbMBA0Fvd9GIyxMeT/fzKxRuBrzYyucqqSftiHLYlGUk/PSMi7HQ2F2/qXLiyjyYnKY1f7bZwRu+rBG5pr5LxhGusgt8ucBfP4TrwgCn3PFjOr+tNnZoGuZTa4gyPKzFGm5qmnJ4ZfSRoMVbzfx9UQpP3Lex2Mjn54WOmoS933Fp6fPLbxjVHn3frUUzIUn5oVcX3nD394QRX46xOPAaLmbJjXxo2BuWfJSj1Q2scr/Vk77uJykVhF7eKGC32rx71OuZSC2uWNLzrcB/GQRHIGi0Z07NW5G5VhAwbh/8nH4EBwgf7jXqWzJ1Z+VhO9GHeoGjI99O9U+or1ThSp70+Y5XsKnTfq3OszpDUfG+Be2QO5XqzUjRSA0I1cjQOeetbl3u1qedHCdI0m0jJYfU3vkMNkKcX3KwpYQHJm2HWqvvYTKshL1OaDboA/A8KdWtlBPWKuCoaal2bygclJv6GSsJpJao0oAA1RdlSBpDoJyCeiWzJegx9NcosEV+IqggUi1Yp07Iky6i0MXNh1iLXKTgppCIfLhx4jrbjcTsZ3uqAkTHKzUXO7g9vcuN3GGy3IjT+YMO/c1iPVcncLV9zgG+V6E0OD653wfoqAVLnVouD7DENb62cwtD5x0ddTR4kZSGs8od3BU9tho4FvKcpvSLFa/GJNb2JWt4rxzoqxA/geKNqoxkNL/nYDiHmDvDRexNyRRwh5REl8ivBOSA07GduovKMYkSrS3C7pHQwjtzrt5d8suKPNUJsQcusms0Vef9Nefcz8NcCfvXVC0VrZMQASbFZji8XEiOkp44q083HMQSu0kbahU0CFT2ptrZQ5YGIXW7XRxqYhxKM4t+XuhUNw7hCLRkXwKC8pjUbjX8PZ+fZc7EAKdpPGcwscqKLLyXPLbJqc1+RH9CC5pb2jHKCQ2NquAOCYfzZLzvfHEcE5U9wHZZGV5Bji5OixlQzgcwMpZcARteZH2EfAXoVWJjDucqU5j4VLDUTvgC8sml+17gjkHheadBrwl4n8sQgWiRIaONhVVkKNOcX3EmoDQB4wUceCa1yl1Av5hWCICEBssm4NFq+7e4HCTb4ovBhgF9wKtYn48K8R7mLOlXSbKL83ALTmqJ02FOKuz6xktKx3HB12Ji5klQrHBfn1zu1ESictyz0n6ZATy+2I+yqTErvQvHOSGry7XM6rxRc1xeJkGYLTke89ZPXS5xbf+0iDPV/ueE09ae68ZrmVdQVf20/qqtuxdSBO4iKJkeWXhdrplyDZ66z7rvq10h8PG3m28M9rw+khh7o6mn/wi9tsNsNP468O4UOj5zuIgl31bLO4OI8ou7SN3dwrmJe7cft08/M246/12rLuqgV5tgppRXQax9tl65f/1j+szKJ55XNdzw9f6d/xSRR6quOIm4171n9W4xJ/DAfBrqo6wZ9+GP853XZBV3/sHPvg0J/vl9zPdRoQpKSrukcwxoos+/OXXJFrq04LWk6rz25CdcowpTo1aOV3fXad/K7PLlRn+Ycnn9i/uu6a+d0M+5fiPTfotPL4stN+deb/O+23Vfddp/2HVfdPOu2iOms/raSwz18hF6qbvkMO7JYuS+Dw5qlnvwHwOixE+fDp0gAAAABJRU5ErkJggg==') 
-                            no-repeat center / cover;
+.travel .search .input a{
+    background-color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 600px;
+    position: relative;
+}
+.travel .search .input a i{
+    float: right;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    color: rgba(0, 0, 255, 0.315);
+    font-size: 1.5em;
+ 
 }
 /* section 시작 */
+body{
+    position: relative;
+}
 section {
     width: 100%;
-    height: 800px;
-    background: url('../img/영수/롯데호텔.png') 
-    no-repeat right / cover;
+    height: 600px;
+    background: url('../img/영수/롯데호텔.png')  no-repeat;
+    background-size: contain; 
+    position: relative;
+    top: 103px;
+    margin-bottom: 35px;
 }
 
 section nav {
     position: relative;
-    top: 70%;
+    top: 60%;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     color:white;
+
 }
 
 section nav .main {
@@ -124,14 +399,13 @@ nav .category h3 {
     height: 15%;
     font-weight: 700;
     font-size: 1.4em;
-    padding: 25px 100px 10px;
+    padding: 27px 0;
     position: relative;
     top: 10px;
 }
 
 nav .category ul {
     /* height: 100px; */
-    margin-left: 5%;
     width: 80%;
     overflow: hidden;
 }
@@ -168,7 +442,7 @@ nav .category ul li a .category-name {
 }
 /* nav 해외여행 */
 
-nav .travel h3{
+nav .trip h3{
     height: 15%;
     font-weight: 700;
     font-size: 1.4em;
@@ -177,28 +451,28 @@ nav .travel h3{
     top: 10px;
     color: rgba(0, 0, 0, 0.812);
 }
-nav .travel ul li{
+nav .trip ul li{
     float: left;
     width: 50%;
     margin-bottom: 25px;
 }
-nav .travel ul li:hover h4{
+nav .trip ul li:hover h4{
  text-decoration: underline;
 }
-nav .travel ul li:nth-child(2n+1){
+nav .trip ul li:nth-child(2n+1){
     clear: both;
 }
-nav .travel ul li img{
+nav .trip ul li img{
     height: 70%;
     padding-bottom: 20px;
 }
-nav .travel ul li h4{
+nav .trip ul li h4{
     cursor: pointer;
     color: rgba(0, 0, 0, 0.668);
     margin-bottom: 8px;
     font-weight: 700;
 }
-nav .travel ul li p{
+nav .trip ul li p{
     color: rgba(0, 0, 0, 0.634);
     font-size: 0.8em;
 }
