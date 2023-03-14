@@ -874,7 +874,6 @@ footer > * {
 }
 /* footer > .footer1 */
 footer .footer1 {
-    border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     padding: 20px 0;
     font-size: 0.7em;
@@ -903,13 +902,13 @@ footer .footer1 div .globalsite {
 
 footer > .footer2 {
     width: 60%;
+    margin: 0 auto;
     border-bottom: 1px solid #ccc;
     padding: 20px 0; 
-    
-
+    display: flex;
 }
-footer .footer2  div {
-    float: left;
+footer .footer2 div {
+    
     font-size: 0.6em; 
     text-align: left;
     line-height: 1.6;
@@ -918,12 +917,10 @@ footer .footer2  div {
 footer .footer2 #box1 {
     width: 15%;
     height: 35px;
-   
     background-repeat: no-repeat;
 }
 footer .footer2 #box2 {
-    width: 20%;
-    
+    width: 20%; 
 }
 footer .footer2 #box3 {
     width: 30%;
@@ -959,8 +956,21 @@ footer .footer2 #box4 span {
 }
 
 /* footer > .footer3 */
-footer > .footer3 { 
-    padding: 20px;
+footer  .footer3 { 
+    width: 60%;
+    height: 80px;
+    margin: 0 auto;
+
+    /* border: 1px solid #000; */
+}
+.footer3 .list_img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/footer3.png');
+    
+    background-repeat: no-repeat;
+    margin: 0 50px;
+    /* border: 1px solid #000; */
 
 }
 
@@ -971,20 +981,23 @@ footer > .footer3 {
 footer .footer4 {    
     background-color: #333232;
     padding: 20px 0;
-    
+}
+footer .footer4 .footer4-1 {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;  
 }
 footer .footer4 p {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     font-size: 0.7em;
     text-align: left;
 }
-footer .footer4 .link {
-    position: relative;
-    left: 300px;
-
-
-
+footer .footer4 .link ul {
+    display: flex;
+    justify-content: flex-end; 
 }
 
 footer .footer4 ul li a {
@@ -994,16 +1007,10 @@ footer .footer4 ul li a {
     margin-right: 8px;
     background-repeat: no-repeat;
     background-size: cover;
-    float: left;
-    
-    
-
+    float: left;  
 }
-
-
 footer .footer4 ul li #face {
     background-image: url('../../img/facebook.png');
-    
 }
 footer .footer4 ul li #blog {
     background-image: url('../../img/naver.png');
@@ -1017,5 +1024,3 @@ footer .footer4 p {
     text-align: left;
     color: #a09b9b;
 }
-
-
