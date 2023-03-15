@@ -20,6 +20,7 @@ header{
     /* overflow: hidden; */
     /* background: gray; */
     border-bottom: 1px solid #ccc;
+    font-size: 1.3em;
 }
 
 header .article{
@@ -663,13 +664,14 @@ header .header .header-container .search-container .header-nav .header-gnb li:ho
 footer > * {
     text-align: center;
     margin: 0 auto; 
+    font-size: 1.3em;
     
 }
 /* footer > .footer1 */
 footer .footer1 {
     border-bottom: 2px solid #ccc;
     padding: 20px 0;
-    font-size: 0.7em;
+    font-size: 0.9em;
 
 }
 footer .footer1 a {
