@@ -36,7 +36,7 @@
 
 ### :family: 개발 팀원 소개
 
-| <img src="./img/수민.png" alt="수민" style="zoom: 25%;" width=400 /> | <img src="./img/채원.png" alt="채원" style="zoom: 25%;" width=400 /> | <img src="./img/영수.png" alt="영수" style="zoom: 25%;" width=400 /> | <img src="./img/유근.png" alt="유근" style="zoom: 25%;" width=400 /> |
+|  <a href="https://github.com/330sum"><img src="./img/수민.png" alt="수민" style="zoom: 25%;" width=400 /></a> |  <a href="https://github.com/WONI2"><img src="./img/채원.png" alt="채원" style="zoom: 25%;" width=400 /></a> |  <a href="https://github.com/createcoding"><img src="./img/영수.png" alt="영수" style="zoom: 25%;" width=400 /></a> | <a href="https://github.com/golddrone7"><img src="./img/유근.png" alt="유근" style="zoom: 25%;" width=400 /></a> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **박수민**<br />(팀장, 로켓 배송)                             | **이채원**<br />(고객센터)                       | **김영수**<br />(여행/티켓)                       | **송유근**<br />(쿠팡 메인)                       |
 
