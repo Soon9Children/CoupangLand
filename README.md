@@ -12,15 +12,18 @@
 
 
 <div id="a"></div>
+
 ## 개발 배경
 - HTML, CSS 학습 후 다양한 CSS 속성들과 태그 레이아웃 구조를 연습하기 위해 진행하였음
 - 쿠팡 사이트 선정 이유는 다양한 레이아웃이 있어 float, flex, position 속성 등 다양한 연습을 하기 위함
 
 <div id="b"></div>
+
 ## 개발 기간
 - `23.03.13` ~ `23.03.15` (월~수)
 
 <div id="c"></div>
+
 ## 개발 환경
 ### FrontEnd
 - visual studio code, HTML, CSS
@@ -28,6 +31,7 @@
 - git, github
 - Notion
 <div id="d"></div>
+
 ## 역할 분담
 - <<b>팀장</b>>박수민 : 로켓배송 페이지
 - <<b>팀원</b>>이채원 : 고객센터 페이지
@@ -46,12 +50,14 @@
 <a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/main-yg.html"><img src="./img/메인페이지-유근.png"></a>
 
 <div id="e"></div>
+
 ### :family: 개발 팀원 소개
 
 |  <a href="https://github.com/330sum"><img src="./img/수민.png" alt="수민" style="zoom: 25%;" width=400 /></a> |  <a href="https://github.com/WONI2"><img src="./img/채원.png" alt="채원" style="zoom: 25%;" width=400 /></a> |  <a href="https://github.com/createcoding"><img src="./img/영수.png" alt="영수" style="zoom: 25%;" width=400 /></a> | <a href="https://github.com/golddrone7"><img src="./img/유근.png" alt="유근" style="zoom: 25%;" width=400 /></a> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **박수민**<br />(팀장, 로켓 배송)                             | **이채원**<br />(고객센터)                       | **김영수**<br />(여행/티켓)                       | **송유근**<br />(쿠팡 메인)                       |
 <div id="f"></div>
+
 ## 회고록
 
 | 이름   | 내용                                                         |
