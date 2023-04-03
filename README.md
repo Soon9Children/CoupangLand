@@ -34,6 +34,12 @@
 <a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/main-yg.html"><img src="./img/메인페이지-유근.png"></a>
 
 
+### :family: 개발 팀원 소개
+
+| <img src="https://user-images.githubusercontent.com/82326116/219449128-ba9b7a7d-8aaa-4883-abe2-e15737474a10.png" alt="KakaoTalk_20230217_025240499" style="zoom: 25%;" width=400 /> | <img src="https://user-images.githubusercontent.com/82326116/219447782-ee46240d-b9d1-4984-8b7e-f38fcf9d3538.jpg" alt="KakaoTalk_20230217_025240499" style="zoom: 25%;" width=400 /> | <img src="https://user-images.githubusercontent.com/82326116/219448503-181eeaca-7611-46b0-b472-6a81911cc722.png" alt="KakaoTalk_20230217_025240499" style="zoom: 25%;" width=400 /> | <img src="https://user-images.githubusercontent.com/82326116/219448121-5cccb578-260e-4aa5-9c93-d9dc487db97e.png" alt="KakaoTalk_20230217_025240499" style="zoom: 25%;" width=400 /> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **박수민**<br />(팀장, 로켓 배송)                             | **이채원**<br />(고객센터)                       | **김영수**<br />(여행/)                       | **송유근**<br />(쿠팡 메인)                       |
+
 ## 회고록
 
 | 이름   | 내용                                                         |
