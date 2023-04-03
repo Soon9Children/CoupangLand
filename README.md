@@ -25,14 +25,13 @@
 
 ### 로켓배송 페이지 - 수민
 
-<a href="./final/main-yg.html"><img src="./img/로켓배송-수민.png"></a>
+<a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/sm-rocket_delivery.html"><img src="./img/로켓배송-수민.png"></a>
 ### 고객센터 페이지 - 채원
-<a href="./final/main-yg.html"><img src="./img/문의페이지-채원.png"></a>
+<a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/cscenter_fin_cw_fin.html"><img src="./img/문의페이지-채원.png"></a>
 ### 여행/티켓 페이지 - 영수
-<a href="./final/main-yg.html"><img src="./img/여행페이지-영수.png"></a>
+<a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/ys-main.html"><img src="./img/여행페이지-영수.png"></a>
 ### 쿠팡 메인페이지 - 유근
-
-<a href="./final/main-yg.html"><img src="./img/메인페이지-유근.png"></a>
+<a href="https://github.com/Soon9Children/CoupangLand/blob/master/FINAL/main-yg.html"><img src="./img/메인페이지-유근.png"></a>
 
 
 ## 회고록
